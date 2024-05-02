@@ -13,9 +13,9 @@ func Activate(target: Character, grid: Array[GridInfo], combat: CombatManager) -
 			count += 1
 			
 	if count == combat.enemies.size():
-		for i in combat.enemies:
-			combat.enemies[i].health -= 999
-			combat.get_node(str("enemy", str(combat.enemies[i].gridPos))).PlayAnim("Purge Undead")
+		for i in combat.enemies.size():
+			combat.enemies.front().health -= 999
+			#combat.get_node(str("enemy", str(combat.enemies[i].gridPos))).PlayAnim("Purge Undead")
 			combat.sfx.PlaySound(load("res://Assets/Sound/fireball sound.wav"))
 	
 	combat.ResolveTurn()

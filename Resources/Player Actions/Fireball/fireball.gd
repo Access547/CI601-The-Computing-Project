@@ -8,8 +8,8 @@ extends Action
 
 func Activate(target: Character, grid: Array[GridInfo], combat: CombatManager) -> void:
 	for i in combat.enemies.size():
-		combat.enemies[i].health -= 7
-		combat.get_node(str("enemy", str(combat.enemies[i].gridPos))).PlayAnim("Fireball")
+		combat.enemies.front().health -= 7
+		combat.get_node(str("enemy", i)).PlayAnim("Fireball")
 		combat.sfx.PlaySound(load("res://Assets/Sound/fireball sound.wav"))
 	combat.ResolveTurn()
 

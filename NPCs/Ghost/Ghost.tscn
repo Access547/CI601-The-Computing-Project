@@ -114,7 +114,7 @@ _data = {
 "idle": SubResource("Animation_o66ba")
 }
 
-[node name="Ghost" type="Node2D" groups=["Combatant", "Enemy"]]
+[node name="Ghost" type="Node2D" groups=["Combatant", "Enemy", "Undead"]]
 script = ExtResource("1_uc2cf")
 enemyActions = Array[Resource]([ExtResource("2_l31oc"), ExtResource("3_1x5ia")])
 
