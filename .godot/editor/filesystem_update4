@@ -36,3 +36,7 @@ res://Resources/Enemy Actions/Mortal Reminder/mortal_reminder.gd
 res://Resources/Enemy Actions/Mortal Reminder/mortal_reminder.tres
 res://NPCs/Ghost/Ghost.gd
 res://Demo stuff/Enemies/Ghost/ghost_enemy.tscn
+res://Combat Manager/combat_level.gd
+res://Demo stuff/demo_level.gd
+res://battle_init.gd
+res://Demo stuff/demo_loader.gd

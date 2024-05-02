@@ -7,3 +7,8 @@ var priestScene: PackedScene = load("res://Player Characters/Priest.tscn")
 var characterArray: Array[PackedScene] = [default, wizardScene, fencerScene, priestScene]
 var enemyArray: Array[PackedScene]
 var savedPlayerPos: Vector2
+
+
+
+func LoadDefaultChars() -> void:
+	characterArray = [default, wizardScene, fencerScene, priestScene]

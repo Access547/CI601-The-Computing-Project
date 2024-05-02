@@ -5,6 +5,10 @@ var page: int
 @onready var image: TextureRect = $TextureRect
 
 
+func _process(delta: float) -> void:
+	if Input.is_action_just_pressed("esc"):
+		get_tree().change_scene_to_file("res://Main Menu.tscn")
+
 func _on_left_pressed() -> void:
 	page = clamp(page - 1, 0, 3)
 	Update()

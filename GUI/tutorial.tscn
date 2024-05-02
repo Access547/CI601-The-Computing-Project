@@ -131,7 +131,7 @@ offset_bottom = 152.0
 theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 8
-text = "Enemy tiles can be targeted with WASD or 1,2,3,4"
+text = "Enemy tiles can be targeted with WASD and the space key, or just 1,2,3,4"
 
 [node name="RichTextLabel7" type="RichTextLabel" parent="." groups=["3"]]
 visible = false

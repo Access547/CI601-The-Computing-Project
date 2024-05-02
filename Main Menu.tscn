@@ -104,6 +104,13 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_right = 157.0
+offset_bottom = 12.0
+theme_override_font_sizes/normal_font_size = 8
+text = "Press escape at any time to return here!"
+
 [connection signal="pressed" from="Buttons/ToDemo" to="." method="_on_to_demo_pressed"]
 [connection signal="pressed" from="Buttons/ToEditor" to="." method="_on_to_editor_pressed"]
 [connection signal="pressed" from="Buttons/ToTutorial" to="." method="_on_to_tutorial_pressed"]

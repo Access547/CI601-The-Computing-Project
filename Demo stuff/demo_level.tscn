@@ -1275,10 +1275,13 @@ autoplay = true
 [node name="Orc Thrower Enemy" parent="." instance=ExtResource("10_401ts")]
 position = Vector2(617, 415)
 enemyArray = Array[PackedScene]([ExtResource("11_jf0q3"), ExtResource("8_1db3k")])
+place = 2
 
 [node name="Zombie Enemy" parent="." instance=ExtResource("13_nipgw")]
 position = Vector2(758, 116)
 enemyArray = Array[PackedScene]([ExtResource("14_fqihp"), ExtResource("14_fqihp"), ExtResource("14_fqihp")])
+place = 3
 
 [node name="Ghost Enemy" parent="." instance=ExtResource("15_fvpp2")]
 position = Vector2(675, 207)
+place = 4

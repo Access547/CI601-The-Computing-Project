@@ -9,6 +9,10 @@ extends Node2D
 func _ready() -> void:
 	BattleInit.characterArray.clear()
 	BattleInit.enemyArray.clear()
+	
+func _process(delta: float) -> void:
+	if Input.is_action_just_pressed("esc"):
+		get_tree().change_scene_to_file("res://Main Menu.tscn")
 
 func AddAlly(classSelected: PackedScene) -> void:
 	var label = RichTextLabel.new()

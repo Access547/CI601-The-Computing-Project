@@ -98,6 +98,9 @@ func UpdateAllFloaters() -> void:
 
 
 func _process(delta: float) -> void:
+	if Input.is_action_just_pressed("esc"):
+		get_tree().change_scene_to_file("res://Main Menu.tscn")
+	
 	if Input.is_action_just_pressed("Q"):
 		selectingEnemies = false
 		selectingMenuItem = false
