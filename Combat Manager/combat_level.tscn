@@ -316,8 +316,9 @@ _data = {
 "Fade in": SubResource("Animation_l54xa")
 }
 
-[node name="CombatLevel" type="Node2D"]
+[node name="CombatLevel" type="Node2D" node_paths=PackedStringArray("floaters")]
 script = ExtResource("1_div38")
+floaters = [NodePath("Menus/Damage Floaters/Floater"), NodePath("Menus/Damage Floaters/Floater2"), NodePath("Menus/Damage Floaters/Floater3"), NodePath("Menus/Damage Floaters/Floater4"), NodePath("Menus/Damage Floaters/Floater5"), NodePath("Menus/Damage Floaters/Floater6"), NodePath("Menus/Damage Floaters/Floater7"), NodePath("Menus/Damage Floaters/Floater8")]
 
 [node name="TileMap" type="TileMap" parent="."]
 y_sort_enabled = true
