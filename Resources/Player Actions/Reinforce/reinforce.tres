@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dd3qa0ad42dop"]
+
+[ext_resource type="Script" path="res://Resources/Player Actions/Reinforce/reinforce.gd" id="1_cgi6i"]
+
+[resource]
+script = ExtResource("1_cgi6i")
+name = "Reinforce"
+description = "Strenghten your allies"
+targetType = 0
+animType = "Attack"

@@ -1,0 +1,109 @@
+[gd_scene load_steps=7 format=3 uid="uid://b3pfjaqwsptwm"]
+
+[ext_resource type="Script" path="res://Main Menu.gd" id="1_0t61w"]
+[ext_resource type="AudioStream" uid="uid://cjxwgikmwoubf" path="res://Assets/Sound/bgm.wav" id="2_s58kx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3x7jm"]
+bg_color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cduf4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sgsql"]
+bg_color = Color(0.384314, 0.384314, 0.384314, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sdjyt"]
+
+[node name="Main Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0t61w")
+
+[node name="Title" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 30.0
+offset_bottom = 53.0
+grow_horizontal = 2
+bbcode_enabled = true
+text = "[wave][center]CI601 Computing Project"
+fit_content = true
+
+[node name="Subtitle" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 53.0
+offset_bottom = 76.0
+grow_horizontal = 2
+theme_override_font_sizes/normal_font_size = 12
+bbcode_enabled = true
+text = "[center]By James Edmunds"
+fit_content = true
+
+[node name="Buttons" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -64.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="ToDemo" type="Button" parent="Buttons"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_3x7jm")
+theme_override_styles/hover = SubResource("StyleBoxFlat_cduf4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_sgsql")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sdjyt")
+text = "Demo Scene"
+
+[node name="ToEditor" type="Button" parent="Buttons"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_3x7jm")
+theme_override_styles/hover = SubResource("StyleBoxFlat_cduf4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_sgsql")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sdjyt")
+text = "Battle Editor"
+
+[node name="ToTutorial" type="Button" parent="Buttons"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_3x7jm")
+theme_override_styles/hover = SubResource("StyleBoxFlat_cduf4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_sgsql")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sdjyt")
+text = "Tutorial Info"
+
+[node name="bgm" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_s58kx")
+volume_db = -20.0
+autoplay = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -9.0
+offset_right = 126.0
+grow_vertical = 0
+theme_override_font_sizes/normal_font_size = 6
+text = "Music by Seth_Makes_Sounds :D"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[connection signal="pressed" from="Buttons/ToDemo" to="." method="_on_to_demo_pressed"]
+[connection signal="pressed" from="Buttons/ToEditor" to="." method="_on_to_editor_pressed"]
+[connection signal="pressed" from="Buttons/ToTutorial" to="." method="_on_to_tutorial_pressed"]

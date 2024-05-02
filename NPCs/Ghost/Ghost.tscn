@@ -1,0 +1,133 @@
+[gd_scene load_steps=10 format=3 uid="uid://bpx73lu5i1lgl"]
+
+[ext_resource type="Script" path="res://NPCs/Ghost/Ghost.gd" id="1_uc2cf"]
+[ext_resource type="Resource" uid="uid://d4mm74ee5oynq" path="res://Resources/Enemy Actions/Pin all/pin_all.tres" id="2_l31oc"]
+[ext_resource type="Texture2D" uid="uid://udajiakla5ms" path="res://Player Characters/Character Art/Without Outline/MiniGhost.png" id="2_nfn8f"]
+[ext_resource type="Resource" uid="uid://dg45ysy077e3y" path="res://Resources/Enemy Actions/Mortal Reminder/mortal_reminder.tres" id="3_1x5ia"]
+
+[sub_resource type="Animation" id="Animation_gc3lj"]
+resource_name = "Basic Attack"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-15, 0), Vector2(0, 0)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.2),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"AnimFinished"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_rheba"]
+resource_name = "Death"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [Vector2i(0, 4), Vector2i(1, 4), Vector2i(2, 4), Vector2i(3, 4), Vector2i(4, 4)]
+}
+
+[sub_resource type="Animation" id="Animation_tl7ur"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:frame_coords")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2i(0, 4)]
+}
+
+[sub_resource type="Animation" id="Animation_o66ba"]
+resource_name = "idle"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ynu13"]
+_data = {
+"Basic Attack": SubResource("Animation_gc3lj"),
+"Death": SubResource("Animation_rheba"),
+"RESET": SubResource("Animation_tl7ur"),
+"idle": SubResource("Animation_o66ba")
+}
+
+[node name="Ghost" type="Node2D" groups=["Combatant", "Enemy"]]
+script = ExtResource("1_uc2cf")
+enemyActions = Array[Resource]([ExtResource("2_l31oc"), ExtResource("3_1x5ia")])
+
+[node name="Character" type="Sprite2D" parent="."]
+texture = ExtResource("2_nfn8f")
+hframes = 8
+vframes = 5
+frame = 32
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Character"]
+libraries = {
+"": SubResource("AnimationLibrary_ynu13")
+}
+autoplay = "idle"
+
+[connection signal="animation_finished" from="Character/AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

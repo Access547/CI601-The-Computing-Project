@@ -1,0 +1,144 @@
+[gd_scene load_steps=12 format=3 uid="uid://b78dsbwsgro1j"]
+
+[ext_resource type="Script" path="res://Player Characters/character.gd" id="2_ib76w"]
+[ext_resource type="Texture2D" uid="uid://codheaqc0hjwd" path="res://Assets/Art/New pointer.png" id="2_s7wcq"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kdaos"]
+load_path = "res://.godot/imported/MiniSwordMan.png-a51a32919ca3c178d0da4258bcfc0139.ctex"
+
+[sub_resource type="Animation" id="Animation_gc3lj"]
+resource_name = "Attack"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [30, 31, 32, 33, 34]
+}
+
+[sub_resource type="Animation" id="Animation_f7voj"]
+resource_name = "Death"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [24, 25, 26, 27]
+}
+
+[sub_resource type="Animation" id="Animation_tl7ur"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_o66ba"]
+resource_name = "idle"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ynu13"]
+_data = {
+"Attack": SubResource("Animation_gc3lj"),
+"Death": SubResource("Animation_f7voj"),
+"RESET": SubResource("Animation_tl7ur"),
+"idle": SubResource("Animation_o66ba")
+}
+
+[sub_resource type="Animation" id="Animation_3muxp"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -9)]
+}
+
+[sub_resource type="Animation" id="Animation_3eigt"]
+resource_name = "bounce"
+length = 1.2
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -6), Vector2(0, -10)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_s5vto"]
+_data = {
+"RESET": SubResource("Animation_3muxp"),
+"bounce": SubResource("Animation_3eigt")
+}
+
+[node name="Character" type="Node2D" groups=["Combatant"]]
+script = ExtResource("2_ib76w")
+
+[node name="Character" type="Sprite2D" parent="."]
+texture = SubResource("CompressedTexture2D_kdaos")
+offset = Vector2(0, -8)
+hframes = 6
+vframes = 6
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Character"]
+libraries = {
+"": SubResource("AnimationLibrary_ynu13")
+}
+autoplay = "idle"
+
+[node name="Pointer" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(0, -9)
+texture = ExtResource("2_s7wcq")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Pointer"]
+libraries = {
+"": SubResource("AnimationLibrary_s5vto")
+}
+autoplay = "bounce"
+
+[connection signal="animation_finished" from="Character/AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

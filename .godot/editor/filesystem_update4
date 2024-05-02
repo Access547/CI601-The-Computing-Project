@@ -1,0 +1,38 @@
+res://Combat Manager/combat_level.tscn
+res://Resources/Player Actions/Slash/slash_action.gd
+res://Resources/Tile Effects/Basic Attack/basic_attack.tres
+res://Player Characters/character.tscn
+res://NPCs/enemy.tscn
+res://GUI/menu.tscn
+res://NPCs/Goblin/goblin2.tscn
+res://Custom menu/battle_creation_menu.tscn
+res://Main Menu.tscn
+res://Demo stuff/demo_level.tscn
+res://Marker.tscn
+res://GUI/damage_number.tscn
+res://GUI/tutorial.tscn
+res://Resources/Player Actions/Riposte/riposte.gd
+res://Resources/Player Actions/Exploit Weakness/exploit_weakness.gd
+res://Resources/Player Actions/Final Cut/final_cut.gd
+res://Resources/Player Actions/Fleche/fleche.gd
+res://Resources/Player Actions/Fireball/fireball.gd
+res://Resources/Player Actions/Purge Undead/purge_undead.gd
+res://Resources/Player Actions/Mass Teleport/mass_teleport.gd
+res://Resources/Player Actions/Heal/heal.gd
+res://Resources/Player Actions/Reinforce/reinforce.gd
+res://Tutorial.gd
+res://Main Menu.gd
+res://NPCs/Orc Thrower/Orc Thrower.tscn
+res://Resources/Enemy Actions/Blind Throw/blind_throw.tres
+res://Resources/Enemy Actions/Blind Throw/blind_throw.gd
+res://Custom menu/battle_creation_menu.gd
+res://NPCs/Orc Thrower/Orc Thrower.gd
+res://NPCs/Archer/archer.tscn
+res://Demo stuff/Enemies/Orc Thrower/orc_thrower.tscn
+res://NPCs/Zombie/zombie.tscn
+res://Demo stuff/Enemies/Zombie/zombie_enemy.tscn
+res://NPCs/Ghost/Ghost.tscn
+res://Resources/Enemy Actions/Mortal Reminder/mortal_reminder.gd
+res://Resources/Enemy Actions/Mortal Reminder/mortal_reminder.tres
+res://NPCs/Ghost/Ghost.gd
+res://Demo stuff/Enemies/Ghost/ghost_enemy.tscn

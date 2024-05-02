@@ -1,0 +1,8 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://dg45ysy077e3y"]
+
+[ext_resource type="Resource" uid="uid://di4l6ux71j2og" path="res://Resources/Tile Effects/Basic Attack/basic_attack.tres" id="1_dy4nc"]
+[ext_resource type="Script" path="res://Resources/Enemy Actions/Mortal Reminder/mortal_reminder.gd" id="2_yj6pg"]
+
+[resource]
+script = ExtResource("2_yj6pg")
+effect = ExtResource("1_dy4nc")

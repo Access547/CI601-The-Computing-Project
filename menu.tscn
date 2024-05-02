@@ -1,0 +1,268 @@
+[gd_scene format=3 uid="uid://dm3wq3b85yllb"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Add Enemy" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -547.0
+offset_top = 118.0
+offset_right = -262.0
+offset_bottom = 196.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "Add Enemy"
+
+[node name="Add PC" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -951.0
+offset_top = 118.0
+offset_right = -666.0
+offset_bottom = 196.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "Add Player
+"
+
+[node name="Enemy Maker" type="HBoxContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 607.0
+offset_top = 338.0
+offset_right = 885.0
+offset_bottom = 378.0
+
+[node name="Enemy Options" type="OptionButton" parent="Panel/Enemy Maker"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+item_count = 4
+popup/item_0/text = "Wolf"
+popup/item_0/id = 0
+popup/item_1/text = "Zombie"
+popup/item_1/id = 1
+popup/item_2/text = "Unspeakable Horror"
+popup/item_2/id = 2
+popup/item_3/text = "Wolf Tamer"
+popup/item_3/id = 3
+
+[node name="Label" type="Label" parent="Panel/Enemy Maker"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_stretch_ratio = 0.25
+text = "lvl"
+
+[node name="Level Options" type="TextEdit" parent="Panel/Enemy Maker"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.25
+placeholder_text = "1-99"
+
+[node name="Enemies" type="MarginContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -134.0
+offset_bottom = 116.0
+grow_horizontal = 0
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Enemy List" type="HBoxContainer" parent="Panel/Enemies"]
+layout_mode = 2
+
+[node name="Enemy Names" type="VBoxContainer" parent="Panel/Enemies/Enemy List"]
+layout_mode = 2
+
+[node name="Enemy" type="Label" parent="Panel/Enemies/Enemy List/Enemy Names"]
+layout_mode = 2
+text = "Wolf
+"
+
+[node name="Enemy2" type="Label" parent="Panel/Enemies/Enemy List/Enemy Names"]
+layout_mode = 2
+text = "Wolf"
+
+[node name="Enemy3" type="Label" parent="Panel/Enemies/Enemy List/Enemy Names"]
+layout_mode = 2
+text = "Zombie"
+
+[node name="Enemy4" type="Label" parent="Panel/Enemies/Enemy List/Enemy Names"]
+layout_mode = 2
+text = "Wolf Tamer"
+
+[node name="Enemy Level" type="VBoxContainer" parent="Panel/Enemies/Enemy List"]
+layout_mode = 2
+
+[node name="Level" type="Label" parent="Panel/Enemies/Enemy List/Enemy Level"]
+layout_mode = 2
+text = "lvl 5"
+
+[node name="Level2" type="Label" parent="Panel/Enemies/Enemy List/Enemy Level"]
+layout_mode = 2
+text = "lvl 7"
+
+[node name="Level3" type="Label" parent="Panel/Enemies/Enemy List/Enemy Level"]
+layout_mode = 2
+text = "lvl 99"
+
+[node name="Level4" type="Label" parent="Panel/Enemies/Enemy List/Enemy Level"]
+layout_mode = 2
+text = "lvl 12"
+
+[node name="PCs2" type="VBoxContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 129.0
+offset_top = 339.0
+offset_right = 567.0
+offset_bottom = 417.0
+
+[node name="Name" type="TextEdit" parent="Panel/PCs2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.3
+placeholder_text = "Name"
+
+[node name="PC Maker" type="HBoxContainer" parent="Panel/PCs2"]
+layout_mode = 2
+
+[node name="Class Options" type="OptionButton" parent="Panel/PCs2/PC Maker"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+item_count = 6
+popup/item_0/text = "Paladin"
+popup/item_0/id = 0
+popup/item_1/text = "Ranger"
+popup/item_1/id = 1
+popup/item_2/text = "Marksman"
+popup/item_2/id = 2
+popup/item_3/text = "Warrior"
+popup/item_3/id = 3
+popup/item_4/text = "Archmage"
+popup/item_4/id = 4
+popup/item_5/text = "Fighter"
+popup/item_5/id = 5
+
+[node name="Label" type="Label" parent="Panel/PCs2/PC Maker"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_stretch_ratio = 0.25
+text = "lvl"
+
+[node name="Level Options" type="TextEdit" parent="Panel/PCs2/PC Maker"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.25
+placeholder_text = "1-99"
+
+[node name="PCs" type="MarginContainer" parent="Panel"]
+layout_mode = 1
+offset_right = 174.0
+offset_bottom = 156.0
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="PC list" type="HBoxContainer" parent="Panel/PCs"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel/PCs/PC list"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_right = 8
+
+[node name="PC names" type="VBoxContainer" parent="Panel/PCs/PC list/MarginContainer"]
+layout_mode = 2
+
+[node name="PC" type="Label" parent="Panel/PCs/PC list/MarginContainer/PC names"]
+layout_mode = 2
+text = "Reggie
+"
+
+[node name="PC2" type="Label" parent="Panel/PCs/PC list/MarginContainer/PC names"]
+layout_mode = 2
+text = "Veigar"
+
+[node name="PC3" type="Label" parent="Panel/PCs/PC list/MarginContainer/PC names"]
+layout_mode = 2
+text = "Azir"
+
+[node name="PC4" type="Label" parent="Panel/PCs/PC list/MarginContainer/PC names"]
+layout_mode = 2
+text = "Aphelios"
+
+[node name="MarginContainer2" type="MarginContainer" parent="Panel/PCs/PC list"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_right = 8
+
+[node name="PC levels" type="VBoxContainer" parent="Panel/PCs/PC list/MarginContainer2"]
+layout_mode = 2
+
+[node name="Level" type="Label" parent="Panel/PCs/PC list/MarginContainer2/PC levels"]
+layout_mode = 2
+text = "lvl 10"
+
+[node name="Level2" type="Label" parent="Panel/PCs/PC list/MarginContainer2/PC levels"]
+layout_mode = 2
+text = "lvl 15"
+
+[node name="Level3" type="Label" parent="Panel/PCs/PC list/MarginContainer2/PC levels"]
+layout_mode = 2
+text = "lvl 13"
+
+[node name="Level4" type="Label" parent="Panel/PCs/PC list/MarginContainer2/PC levels"]
+layout_mode = 2
+text = "lvl 1"
+
+[node name="MarginContainer3" type="MarginContainer" parent="Panel/PCs/PC list"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_right = 8
+
+[node name="Class" type="VBoxContainer" parent="Panel/PCs/PC list/MarginContainer3"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/PCs/PC list/MarginContainer3/Class"]
+layout_mode = 2
+text = "Paladin"
+
+[node name="Label2" type="Label" parent="Panel/PCs/PC list/MarginContainer3/Class"]
+layout_mode = 2
+text = "Archmage"
+
+[node name="Label3" type="Label" parent="Panel/PCs/PC list/MarginContainer3/Class"]
+layout_mode = 2
+text = "Warrior"
+
+[node name="Label4" type="Label" parent="Panel/PCs/PC list/MarginContainer3/Class"]
+layout_mode = 2
+text = "Marksman"

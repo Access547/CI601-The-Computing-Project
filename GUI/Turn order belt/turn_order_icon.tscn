@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bn72t35ejree3"]
+
+[ext_resource type="Script" path="res://GUI/Turn order belt/turn_order_icon.gd" id="1_lp111"]
+[ext_resource type="Texture2D" uid="uid://cuvfwxuj225uc" path="res://icon.svg" id="2_astdi"]
+
+[node name="Turn Order Icon" type="TextureRect"]
+offset_right = 78.0
+offset_bottom = 68.0
+expand_mode = 1
+stretch_mode = 1
+script = ExtResource("1_lp111")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_astdi")
+expand_mode = 2

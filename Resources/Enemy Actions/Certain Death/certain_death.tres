@@ -1,0 +1,8 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://cswlmh186o5dk"]
+
+[ext_resource type="Resource" uid="uid://di4l6ux71j2og" path="res://Resources/Tile Effects/Basic Attack/basic_attack.tres" id="1_apyo4"]
+[ext_resource type="Script" path="res://Resources/Enemy Actions/Certain Death/certain_death.gd" id="2_aoq78"]
+
+[resource]
+script = ExtResource("2_aoq78")
+effect = ExtResource("1_apyo4")

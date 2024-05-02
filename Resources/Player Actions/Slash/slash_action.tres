@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dqtrarpaxs4qa"]
+
+[ext_resource type="Script" path="res://Resources/Player Actions/Slash/slash_action.gd" id="1_hh3n6"]
+
+[resource]
+script = ExtResource("1_hh3n6")
+name = "Slash"
+description = "Slash at your opponent"
+targetType = 1
+animType = "Attack"

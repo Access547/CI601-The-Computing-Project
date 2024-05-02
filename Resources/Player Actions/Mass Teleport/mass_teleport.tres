@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://cdxfnws76pa8e"]
+
+[ext_resource type="Script" path="res://Resources/Player Actions/Mass Teleport/mass_teleport.gd" id="1_ss3qd"]
+
+[resource]
+script = ExtResource("1_ss3qd")
+name = "Mass Teleport"
+description = "Repositions all allies randomly"
+targetType = 0
+animType = "Attack"

@@ -1,0 +1,8 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://btsgwoym8bbum"]
+
+[ext_resource type="Script" path="res://Resources/Enemy Actions/Column Attack/column_attack.gd" id="1_up7bx"]
+[ext_resource type="Resource" uid="uid://di4l6ux71j2og" path="res://Resources/Tile Effects/Basic Attack/basic_attack.tres" id="1_vj4nn"]
+
+[resource]
+script = ExtResource("1_up7bx")
+effect = ExtResource("1_vj4nn")

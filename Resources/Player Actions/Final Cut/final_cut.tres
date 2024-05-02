@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dvgxpfxwv1u4a"]
+
+[ext_resource type="Script" path="res://Resources/Player Actions/Final Cut/final_cut.gd" id="1_bnm2j"]
+
+[resource]
+script = ExtResource("1_bnm2j")
+name = "Final Cut"
+description = "If only one enemy remains, instantly kill them"
+targetType = 0
+animType = "Attack"

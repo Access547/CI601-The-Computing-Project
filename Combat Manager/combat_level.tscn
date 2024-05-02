@@ -1,0 +1,613 @@
+[gd_scene load_steps=17 format=3 uid="uid://bddf43jepjmoj"]
+
+[ext_resource type="Script" path="res://Combat Manager/combat_level.gd" id="1_div38"]
+[ext_resource type="Texture2D" uid="uid://3oot5pwjas0u" path="res://Assets/Art/isometric tiles.png" id="2_unta2"]
+[ext_resource type="Script" path="res://Combat Manager/TileMap.gd" id="3_vcl7s"]
+[ext_resource type="PackedScene" uid="uid://b603m3sbrbrt2" path="res://GUI/menu.tscn" id="6_6oke5"]
+[ext_resource type="PackedScene" uid="uid://duiovebm0dfsn" path="res://Marker.tscn" id="7_1yf0y"]
+[ext_resource type="PackedScene" uid="uid://c4aaktadpqxq6" path="res://GUI/Damage Floater/Damage Floater.tscn" id="8_p8hvx"]
+[ext_resource type="PackedScene" uid="uid://bbap047theegh" path="res://GUI/health_bars/health_bars.tscn" id="9_g4agi"]
+[ext_resource type="AudioStream" uid="uid://cjxwgikmwoubf" path="res://Assets/Sound/bgm.wav" id="9_lka8e"]
+[ext_resource type="Script" path="res://Combat Manager/sfx.gd" id="9_mm3xw"]
+[ext_resource type="Script" path="res://GUI/Hoverable.gd" id="10_bs8xn"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7vfdu"]
+texture = ExtResource("2_unta2")
+texture_region_size = Vector2i(48, 48)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, -12)
+1:0/0 = 0
+1:0/0/texture_origin = Vector2i(0, -12)
+2:0/0 = 0
+2:0/0/texture_origin = Vector2i(0, -12)
+3:0/0 = 0
+3:0/0/texture_origin = Vector2i(0, -12)
+4:0/0 = 0
+4:0/0/texture_origin = Vector2i(0, -12)
+5:0/0 = 0
+5:0/0/texture_origin = Vector2i(0, -12)
+6:0/0 = 0
+6:0/0/texture_origin = Vector2i(0, -12)
+0:1/0 = 0
+0:1/0/texture_origin = Vector2i(0, -12)
+1:1/0 = 0
+1:1/0/texture_origin = Vector2i(0, -12)
+2:1/0 = 0
+2:1/0/texture_origin = Vector2i(0, -12)
+3:1/0 = 0
+3:1/0/texture_origin = Vector2i(0, -12)
+4:1/0 = 0
+4:1/0/texture_origin = Vector2i(0, -12)
+5:1/0 = 0
+5:1/0/texture_origin = Vector2i(0, -12)
+6:1/0 = 0
+6:1/0/texture_origin = Vector2i(0, -12)
+7:1/0 = 0
+7:1/0/texture_origin = Vector2i(0, -12)
+8:1/0 = 0
+8:1/0/texture_origin = Vector2i(0, -12)
+9:1/0 = 0
+9:1/0/texture_origin = Vector2i(0, -12)
+0:2/0 = 0
+0:2/0/texture_origin = Vector2i(0, -12)
+1:2/0 = 0
+1:2/0/texture_origin = Vector2i(0, -12)
+2:2/0 = 0
+2:2/0/texture_origin = Vector2i(0, -12)
+3:2/0 = 0
+3:2/0/texture_origin = Vector2i(0, -12)
+4:2/0 = 0
+4:2/0/texture_origin = Vector2i(0, -12)
+5:2/0 = 0
+5:2/0/texture_origin = Vector2i(0, -12)
+6:2/0 = 0
+6:2/0/texture_origin = Vector2i(0, -12)
+7:2/0 = 0
+7:2/0/texture_origin = Vector2i(0, -12)
+8:2/0 = 0
+8:2/0/texture_origin = Vector2i(0, -12)
+0:3/0 = 0
+0:3/0/texture_origin = Vector2i(0, -12)
+1:3/0 = 0
+1:3/0/texture_origin = Vector2i(0, -12)
+2:3/0 = 0
+2:3/0/texture_origin = Vector2i(0, -12)
+3:3/0 = 0
+3:3/0/texture_origin = Vector2i(0, -12)
+4:3/0 = 0
+4:3/0/texture_origin = Vector2i(0, -12)
+5:3/0 = 0
+5:3/0/texture_origin = Vector2i(0, -12)
+6:3/0 = 0
+6:3/0/texture_origin = Vector2i(0, -12)
+7:3/0 = 0
+7:3/0/texture_origin = Vector2i(0, -12)
+8:3/0 = 0
+8:3/0/texture_origin = Vector2i(0, -12)
+9:3/0 = 0
+9:3/0/texture_origin = Vector2i(0, -12)
+0:4/0 = 0
+0:4/0/texture_origin = Vector2i(0, -12)
+1:4/0 = 0
+1:4/0/texture_origin = Vector2i(0, -12)
+2:4/0 = 0
+2:4/0/texture_origin = Vector2i(0, -12)
+3:4/0 = 0
+3:4/0/texture_origin = Vector2i(0, -12)
+4:4/0 = 0
+4:4/0/texture_origin = Vector2i(0, -12)
+5:4/0 = 0
+5:4/0/texture_origin = Vector2i(0, -12)
+6:4/0 = 0
+6:4/0/texture_origin = Vector2i(0, -12)
+7:4/0 = 0
+7:4/0/texture_origin = Vector2i(0, -12)
+8:4/0 = 0
+8:4/0/texture_origin = Vector2i(0, -12)
+9:4/0 = 0
+9:4/0/texture_origin = Vector2i(0, -12)
+0:5/0 = 0
+0:5/0/texture_origin = Vector2i(0, -12)
+1:5/0 = 0
+1:5/0/texture_origin = Vector2i(0, -12)
+2:5/0 = 0
+2:5/0/texture_origin = Vector2i(0, -12)
+4:5/0 = 0
+4:5/0/texture_origin = Vector2i(0, -12)
+6:5/0 = 0
+6:5/0/texture_origin = Vector2i(0, -12)
+7:5/0 = 0
+7:5/0/texture_origin = Vector2i(0, -12)
+8:5/0 = 0
+8:5/0/texture_origin = Vector2i(0, -12)
+9:5/0 = 0
+9:5/0/texture_origin = Vector2i(0, -12)
+0:6/0 = 0
+0:6/0/texture_origin = Vector2i(0, -12)
+1:6/0 = 0
+1:6/0/texture_origin = Vector2i(0, -12)
+2:6/0 = 0
+2:6/0/texture_origin = Vector2i(0, -12)
+3:6/0 = 0
+3:6/0/texture_origin = Vector2i(0, -12)
+4:6/0 = 0
+4:6/0/texture_origin = Vector2i(0, -12)
+5:6/0 = 0
+5:6/0/texture_origin = Vector2i(0, -12)
+6:6/0 = 0
+6:6/0/texture_origin = Vector2i(0, -12)
+7:6/0 = 0
+7:6/0/texture_origin = Vector2i(0, -12)
+8:6/0 = 0
+8:6/0/texture_origin = Vector2i(0, -12)
+9:6/0 = 0
+9:6/0/texture_origin = Vector2i(0, -12)
+0:7/0 = 0
+0:7/0/texture_origin = Vector2i(0, -12)
+1:7/0 = 0
+1:7/0/texture_origin = Vector2i(0, -12)
+2:7/0 = 0
+2:7/0/texture_origin = Vector2i(0, -12)
+3:7/0 = 0
+3:7/0/texture_origin = Vector2i(0, -12)
+4:7/0 = 0
+4:7/0/texture_origin = Vector2i(0, -12)
+5:7/0 = 0
+5:7/0/texture_origin = Vector2i(0, -12)
+6:7/0 = 0
+6:7/0/texture_origin = Vector2i(0, -12)
+7:7/0 = 0
+7:7/0/texture_origin = Vector2i(0, -12)
+8:7/0 = 0
+8:7/0/texture_origin = Vector2i(0, -12)
+9:7/0 = 0
+9:7/0/texture_origin = Vector2i(0, -12)
+0:8/0 = 0
+0:8/0/texture_origin = Vector2i(0, -12)
+1:8/0 = 0
+1:8/0/texture_origin = Vector2i(0, -12)
+2:8/0 = 0
+2:8/0/texture_origin = Vector2i(0, -12)
+3:8/0 = 0
+3:8/0/texture_origin = Vector2i(0, -12)
+4:8/0 = 0
+4:8/0/texture_origin = Vector2i(0, -12)
+5:8/0 = 0
+5:8/0/texture_origin = Vector2i(0, -12)
+6:8/0 = 0
+6:8/0/texture_origin = Vector2i(0, -12)
+7:8/0 = 0
+7:8/0/texture_origin = Vector2i(0, -12)
+8:8/0 = 0
+8:8/0/texture_origin = Vector2i(0, -12)
+9:8/0 = 0
+9:8/0/texture_origin = Vector2i(0, -12)
+0:9/0 = 0
+0:9/0/texture_origin = Vector2i(0, -12)
+1:9/0 = 0
+1:9/0/texture_origin = Vector2i(0, -12)
+2:9/0 = 0
+2:9/0/texture_origin = Vector2i(0, -12)
+3:9/0 = 0
+3:9/0/texture_origin = Vector2i(0, -12)
+4:9/0 = 0
+4:9/0/texture_origin = Vector2i(0, -12)
+5:9/0 = 0
+5:9/0/texture_origin = Vector2i(0, -12)
+6:9/0 = 0
+6:9/0/texture_origin = Vector2i(0, -12)
+7:9/0 = 0
+7:9/0/texture_origin = Vector2i(0, -12)
+8:9/0 = 0
+8:9/0/texture_origin = Vector2i(0, -12)
+9:9/0 = 0
+9:9/0/texture_origin = Vector2i(0, -12)
+0:10/0 = 0
+0:10/0/texture_origin = Vector2i(0, -12)
+1:10/0 = 0
+1:10/0/texture_origin = Vector2i(0, -12)
+2:10/0 = 0
+2:10/0/texture_origin = Vector2i(0, -12)
+3:10/0 = 0
+3:10/0/texture_origin = Vector2i(0, -12)
+0:11/0 = 0
+0:11/0/texture_origin = Vector2i(0, -12)
+1:11/0 = 0
+1:11/0/texture_origin = Vector2i(0, -12)
+2:11/0 = 0
+2:11/0/texture_origin = Vector2i(0, -12)
+3:11/0 = 0
+3:11/0/texture_origin = Vector2i(0, -12)
+4:11/0 = 0
+4:11/0/texture_origin = Vector2i(0, -12)
+5:11/0 = 0
+5:11/0/texture_origin = Vector2i(0, -12)
+0:12/0 = 0
+0:12/0/texture_origin = Vector2i(0, -12)
+1:12/0 = 0
+1:12/0/texture_origin = Vector2i(0, -12)
+2:12/0 = 0
+2:12/0/texture_origin = Vector2i(0, -12)
+3:12/0 = 0
+3:12/0/texture_origin = Vector2i(0, -12)
+4:12/0 = 0
+4:12/0/texture_origin = Vector2i(0, -12)
+5:12/0 = 0
+5:12/0/texture_origin = Vector2i(0, -12)
+0:13/0 = 0
+0:13/0/texture_origin = Vector2i(0, -12)
+1:13/0 = 0
+1:13/0/texture_origin = Vector2i(0, -12)
+2:13/0 = 0
+2:13/0/texture_origin = Vector2i(0, -12)
+3:13/0 = 0
+3:13/0/texture_origin = Vector2i(0, -12)
+4:13/0 = 0
+4:13/0/texture_origin = Vector2i(0, -12)
+5:13/0 = 0
+5:13/0/texture_origin = Vector2i(0, -12)
+0:14/0 = 0
+0:14/0/texture_origin = Vector2i(0, -12)
+1:14/0 = 0
+1:14/0/texture_origin = Vector2i(0, -12)
+2:14/0 = 0
+2:14/0/texture_origin = Vector2i(0, -12)
+4:14/0 = 0
+4:14/0/texture_origin = Vector2i(0, -12)
+
+[sub_resource type="TileSet" id="TileSet_pqbj5"]
+tile_shape = 1
+tile_layout = 5
+tile_offset_axis = 1
+tile_size = Vector2i(48, 24)
+sources/0 = SubResource("TileSetAtlasSource_7vfdu")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1j1x3"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_tfpec"]
+resource_name = "Fade"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_l54xa"]
+resource_name = "Fade in"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../..")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"SwapScenes"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qp8ps"]
+_data = {
+"Fade": SubResource("Animation_tfpec"),
+"Fade in": SubResource("Animation_l54xa")
+}
+
+[node name="CombatLevel" type="Node2D"]
+script = ExtResource("1_div38")
+
+[node name="TileMap" type="TileMap" parent="."]
+y_sort_enabled = true
+position = Vector2(13, 1.27513)
+tile_set = SubResource("TileSet_pqbj5")
+format = 2
+layer_0/name = "Base"
+layer_0/y_sort_enabled = true
+layer_0/tile_data = PackedInt32Array(-65533, 65536, 1, 3, 65536, 1, 65539, 65536, 1, 131076, 65536, 1, 131075, 65536, 1, 65540, 65536, 1, 4, 65536, 1, -65532, 65536, 1, 65543, 262144, 1, 7, 262144, 1, -65529, 262144, 1, -131065, 262144, 1)
+layer_1/name = "Overlays"
+layer_1/modulate = Color(0.47451, 0.784314, 0.862745, 0.85098)
+layer_1/y_sort_enabled = true
+layer_1/tile_data = PackedInt32Array(131076, 262144, 0, 131075, 262144, 0, 65539, 262144, 0, 65540, 262144, 0, 4, 262144, 0, 3, 262144, 0, -65533, 262144, 0, -65532, 262144, 0, 65543, 262144, 0, 7, 262144, 0, -65529, 262144, 0, -131065, 262144, 0)
+layer_2/name = "Damage Effects"
+layer_2/y_sort_enabled = true
+layer_2/tile_data = PackedInt32Array()
+script = ExtResource("3_vcl7s")
+
+[node name="Menus" type="CanvasLayer" parent="."]
+
+[node name="Menu" parent="Menus" node_paths=PackedStringArray("combat") instance=ExtResource("6_6oke5")]
+mouse_filter = 2
+combat = NodePath("../..")
+
+[node name="Damage Floaters" type="Control" parent="Menus"]
+layout_mode = 3
+anchors_preset = 0
+offset_bottom = 1.0
+
+[node name="Floater" parent="Menus/Damage Floaters" node_paths=PackedStringArray("combat") instance=ExtResource("8_p8hvx")]
+visible = false
+layout_mode = 0
+offset_left = 128.0
+offset_top = 1.0
+offset_right = 168.0
+offset_bottom = 41.0
+combat = NodePath("../../..")
+
+[node name="Floater2" parent="Menus/Damage Floaters" node_paths=PackedStringArray("combat") instance=ExtResource("8_p8hvx")]
+visible = false
+layout_mode = 0
+offset_left = 155.0
+offset_top = 12.0
+offset_right = 195.0
+offset_bottom = 52.0
+combat = NodePath("../../..")
+pos = 1
+
+[node name="Floater3" parent="Menus/Damage Floaters" node_paths=PackedStringArray("combat") instance=ExtResource("8_p8hvx")]
+visible = false
+layout_mode = 0
+offset_left = 102.0
+offset_top = 9.0
+offset_right = 142.0
+offset_bottom = 49.0
+combat = NodePath("../../..")
+pos = 2
+
+[node name="Floater4" parent="Menus/Damage Floaters" node_paths=PackedStringArray("combat") instance=ExtResource("8_p8hvx")]
+visible = false
+layout_mode = 0
+offset_left = 129.0
+offset_top = 26.0
+offset_right = 169.0
+offset_bottom = 66.0
+combat = NodePath("../../..")
+pos = 3
+
+[node name="Floater5" parent="Menus/Damage Floaters" node_paths=PackedStringArray("combat") instance=ExtResource("8_p8hvx")]
+visible = false
+layout_mode = 0
+offset_left = 79.0
+offset_top = 27.0
+offset_right = 119.0
+offset_bottom = 67.0
+combat = NodePath("../../..")
+pos = 4
+
+[node name="Floater6" parent="Menus/Damage Floaters" node_paths=PackedStringArray("combat") instance=ExtResource("8_p8hvx")]
+visible = false
+layout_mode = 0
+offset_left = 105.0
+offset_top = 46.0
+offset_right = 145.0
+offset_bottom = 86.0
+combat = NodePath("../../..")
+pos = 5
+
+[node name="Floater7" parent="Menus/Damage Floaters" node_paths=PackedStringArray("combat") instance=ExtResource("8_p8hvx")]
+visible = false
+layout_mode = 0
+offset_left = 55.0
+offset_top = 38.0
+offset_right = 95.0
+offset_bottom = 78.0
+combat = NodePath("../../..")
+pos = 6
+
+[node name="Floater8" parent="Menus/Damage Floaters" node_paths=PackedStringArray("combat") instance=ExtResource("8_p8hvx")]
+visible = false
+layout_mode = 0
+offset_left = 78.0
+offset_top = 56.0
+offset_right = 118.0
+offset_bottom = 96.0
+combat = NodePath("../../..")
+pos = 7
+
+[node name="health bars" parent="Menus" instance=ExtResource("9_g4agi")]
+
+[node name="Panel" type="Panel" parent="Menus"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1j1x3")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Menus/Panel"]
+libraries = {
+"": SubResource("AnimationLibrary_qp8ps")
+}
+autoplay = "Fade"
+
+[node name="0" parent="." groups=["Marker"] instance=ExtResource("7_1yf0y")]
+visible = false
+z_index = 1
+position = Vector2(133, 32)
+
+[node name="1" parent="." groups=["Marker"] instance=ExtResource("7_1yf0y")]
+visible = false
+z_index = 1
+position = Vector2(158, 47)
+
+[node name="2" parent="." groups=["Marker"] instance=ExtResource("7_1yf0y")]
+visible = false
+z_index = 1
+position = Vector2(110, 46)
+
+[node name="3" parent="." groups=["Marker"] instance=ExtResource("7_1yf0y")]
+visible = false
+z_index = 1
+position = Vector2(134, 58)
+
+[node name="4" parent="." groups=["Marker"] instance=ExtResource("7_1yf0y")]
+visible = false
+z_index = 1
+position = Vector2(86, 57)
+
+[node name="5" parent="." groups=["Marker"] instance=ExtResource("7_1yf0y")]
+visible = false
+z_index = 1
+position = Vector2(111, 70)
+
+[node name="6" parent="." groups=["Marker"] instance=ExtResource("7_1yf0y")]
+visible = false
+z_index = 1
+position = Vector2(61, 68)
+
+[node name="7" parent="." groups=["Marker"] instance=ExtResource("7_1yf0y")]
+visible = false
+z_index = 1
+position = Vector2(87, 81)
+
+[node name="enemy0" parent="." groups=["Enemy", "Marker"] instance=ExtResource("7_1yf0y")]
+visible = false
+z_index = 1
+position = Vector2(181, 100)
+
+[node name="enemy1" parent="." groups=["Enemy", "Marker"] instance=ExtResource("7_1yf0y")]
+visible = false
+z_index = 1
+position = Vector2(205, 88)
+
+[node name="enemy2" parent="." groups=["Enemy", "Marker"] instance=ExtResource("7_1yf0y")]
+visible = false
+z_index = 1
+position = Vector2(229, 76)
+
+[node name="enemy3" parent="." groups=["Enemy", "Marker"] instance=ExtResource("7_1yf0y")]
+visible = false
+z_index = 1
+position = Vector2(253, 65)
+
+[node name="Area0" type="Area2D" parent="." node_paths=PackedStringArray("floater")]
+position = Vector2(72, -36)
+script = ExtResource("10_bs8xn")
+floater = NodePath("../Menus/Damage Floaters/Floater")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area0"]
+visible = false
+polygon = PackedVector2Array(37, 73, 61, 85, 84, 73, 61, 61)
+
+[node name="Area1" type="Area2D" parent="." node_paths=PackedStringArray("floater")]
+position = Vector2(72, -36)
+script = ExtResource("10_bs8xn")
+pos = 1
+floater = NodePath("../Menus/Damage Floaters/Floater2")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area1"]
+visible = false
+position = Vector2(24, 12)
+polygon = PackedVector2Array(37, 73, 61, 85, 84, 73, 61, 61)
+
+[node name="Area2" type="Area2D" parent="." node_paths=PackedStringArray("floater")]
+position = Vector2(0, -24)
+script = ExtResource("10_bs8xn")
+pos = 2
+floater = NodePath("../Menus/Damage Floaters/Floater3")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2"]
+visible = false
+position = Vector2(48, 0)
+polygon = PackedVector2Array(37, 73, 61, 85, 84, 73, 61, 61)
+
+[node name="Area3" type="Area2D" parent="." node_paths=PackedStringArray("floater")]
+script = ExtResource("10_bs8xn")
+pos = 3
+floater = NodePath("../Menus/Damage Floaters/Floater4")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area3"]
+visible = false
+position = Vector2(72, -12)
+polygon = PackedVector2Array(37, 73, 61, 85, 84, 73, 61, 61)
+
+[node name="Area4" type="Area2D" parent="." node_paths=PackedStringArray("floater")]
+script = ExtResource("10_bs8xn")
+pos = 4
+floater = NodePath("../Menus/Damage Floaters/Floater5")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area4"]
+visible = false
+position = Vector2(24, -12)
+polygon = PackedVector2Array(37, 73, 61, 85, 84, 73, 61, 61)
+
+[node name="Area5" type="Area2D" parent="." node_paths=PackedStringArray("floater")]
+position = Vector2(0, 24)
+script = ExtResource("10_bs8xn")
+pos = 5
+floater = NodePath("../Menus/Damage Floaters/Floater6")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area5"]
+visible = false
+position = Vector2(48, -24)
+polygon = PackedVector2Array(37, 73, 61, 85, 84, 73, 61, 61)
+
+[node name="Area6" type="Area2D" parent="." node_paths=PackedStringArray("floater")]
+position = Vector2(-95, 24)
+script = ExtResource("10_bs8xn")
+pos = 6
+floater = NodePath("../Menus/Damage Floaters/Floater7")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area6"]
+visible = false
+position = Vector2(96, -24)
+polygon = PackedVector2Array(37, 73, 61, 85, 84, 73, 61, 61)
+
+[node name="Area7" type="Area2D" parent="." node_paths=PackedStringArray("floater")]
+position = Vector2(-48, 48)
+script = ExtResource("10_bs8xn")
+pos = 7
+floater = NodePath("../Menus/Damage Floaters/Floater8")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area7"]
+visible = false
+position = Vector2(72, -36)
+polygon = PackedVector2Array(37, 73, 61, 85, 84, 73, 61, 61)
+
+[node name="bgm" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_lka8e")
+volume_db = -20.0
+autoplay = true
+
+[node name="sfx" type="AudioStreamPlayer" parent="."]
+script = ExtResource("9_mm3xw")
+
+[connection signal="mouse_entered" from="Area0" to="Area0" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Area0" to="Area0" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Area1" to="Area1" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Area1" to="Area1" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Area2" to="Area2" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Area2" to="Area2" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Area3" to="Area3" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Area3" to="Area3" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Area4" to="Area4" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Area4" to="Area4" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Area5" to="Area5" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Area5" to="Area5" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Area6" to="Area6" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Area6" to="Area6" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Area7" to="Area7" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Area7" to="Area7" method="_on_mouse_exited"]

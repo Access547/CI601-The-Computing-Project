@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dib15stn8lcsd"]
+
+[ext_resource type="Script" path="res://Resources/Player Actions/Riposte/riposte.gd" id="1_f3ekt"]
+
+[resource]
+script = ExtResource("1_f3ekt")
+name = "Riposte"
+description = "Deal damage to an enemy equal to the damage of your tile"
+targetType = 1
+animType = "Attack"

@@ -1,0 +1,361 @@
+[gd_scene load_steps=34 format=3 uid="uid://ucsmnihi3opc"]
+
+[ext_resource type="Script" path="res://Custom menu/battle_creation_menu.gd" id="1_dunf6"]
+[ext_resource type="Texture2D" uid="uid://codheaqc0hjwd" path="res://Assets/Art/New pointer.png" id="1_hr8uc"]
+[ext_resource type="Theme" uid="uid://b60cipwhhawpt" path="res://Custom menu/theme.tres" id="2_chx1h"]
+[ext_resource type="Texture2D" uid="uid://3ypfoe56u8v8" path="res://Player Characters/Character Art/Without Outline/MiniSwordMan.png" id="2_n7d20"]
+[ext_resource type="Texture2D" uid="uid://b16mv8qsabfit" path="res://Player Characters/Character Art/Without Outline/MiniPriest.png" id="5_0a7ju"]
+[ext_resource type="Texture2D" uid="uid://dj8ysvi2djhjb" path="res://Player Characters/Character Art/Without Outline/MiniGoblin.png" id="5_x5jfe"]
+[ext_resource type="Texture2D" uid="uid://dxdpix8obgrrj" path="res://Player Characters/Character Art/Without Outline/MiniArcherMan.png" id="6_ct5f7"]
+[ext_resource type="Texture2D" uid="uid://dekpngye7xpc6" path="res://Player Characters/Character Art/Without Outline/MiniHighPriestess.png" id="6_okdn2"]
+[ext_resource type="Texture2D" uid="uid://c3208yv1tymob" path="res://Player Characters/Character Art/Without Outline/MiniPrinceMan.png" id="7_q3x6v"]
+[ext_resource type="Texture2D" uid="uid://dwp2k7aq5qmcy" path="res://Player Characters/Character Art/Without Outline/MiniOrcAxeThrower.png" id="10_iipty"]
+[ext_resource type="Texture2D" uid="uid://do15en1hrip08" path="res://Player Characters/Character Art/Without Outline/MiniZombie.png" id="11_m63yp"]
+[ext_resource type="Texture2D" uid="uid://udajiakla5ms" path="res://Player Characters/Character Art/Without Outline/MiniGhost.png" id="12_0ffcs"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a612c"]
+bg_color = Color(0.309804, 0.309804, 0.309804, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_owuds"]
+bg_color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_17ifg"]
+bg_color = Color(0.384314, 0.384314, 0.384314, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y6ola"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dg4cb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_33fkd"]
+bg_color = Color(0.160784, 0.160784, 0.160784, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0d66s"]
+bg_color = Color(0.321569, 0.321569, 0.321569, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ekx3"]
+atlas = ExtResource("2_n7d20")
+region = Rect2(8, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_12jbi"]
+atlas = ExtResource("5_0a7ju")
+region = Rect2(8, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u212y"]
+atlas = ExtResource("6_okdn2")
+region = Rect2(8, 8, 16, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8jkjt"]
+atlas = ExtResource("7_q3x6v")
+region = Rect2(8, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0pc1w"]
+atlas = ExtResource("5_x5jfe")
+region = Rect2(8, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3g6bv"]
+atlas = ExtResource("6_ct5f7")
+region = Rect2(8, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u4g4x"]
+atlas = ExtResource("10_iipty")
+region = Rect2(8, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u1o5q"]
+atlas = ExtResource("11_m63yp")
+region = Rect2(8, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bb5u8"]
+atlas = ExtResource("12_0ffcs")
+region = Rect2(8, 8, 16, 24)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nyvxr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j1wr4"]
+
+[sub_resource type="Animation" id="Animation_1achl"]
+resource_name = "ShowAllyError"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("NotEnoughAllies:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("NotEnoughAllies:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1, 2.8, 3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_ot0dq"]
+resource_name = "ShowEnemyError"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("NotEnoughAllies2:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("NotEnoughAllies2:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1, 2.8, 3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mfpmi"]
+_data = {
+"ShowAllyError": SubResource("Animation_1achl"),
+"ShowEnemyError": SubResource("Animation_ot0dq")
+}
+
+[node name="Battle creation menu" type="Node2D"]
+script = ExtResource("1_dunf6")
+
+[node name="Menu" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="Menu"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_a612c")
+
+[node name="Allies Roster" type="VBoxContainer" parent="Menu"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Menu/Allies Roster"]
+layout_mode = 2
+theme = ExtResource("2_chx1h")
+theme_override_font_sizes/normal_font_size = 8
+text = "Allies:"
+fit_content = true
+
+[node name="Allies" type="VBoxContainer" parent="Menu/Allies Roster"]
+layout_mode = 2
+
+[node name="Enemy Roster" type="VBoxContainer" parent="Menu"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -84.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Menu/Enemy Roster"]
+layout_mode = 2
+theme = ExtResource("2_chx1h")
+theme_override_font_sizes/normal_font_size = 8
+bbcode_enabled = true
+text = "[right]Enemies:"
+fit_content = true
+
+[node name="Enemies" type="VBoxContainer" parent="Menu/Enemy Roster"]
+layout_mode = 2
+
+[node name="Start button" type="Button" parent="Menu"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -57.5
+offset_top = -47.0
+offset_right = 57.5
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_owuds")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_17ifg")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_y6ola")
+text = "Start Combat!"
+
+[node name="Enemies" type="VBoxContainer" parent="Menu"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -45.0
+offset_right = -5.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="Add Allies" type="RichTextLabel" parent="Menu"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -6.5
+offset_right = 84.0
+offset_bottom = 6.5
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 8
+bbcode_enabled = true
+text = "[center]Add Allies"
+
+[node name="Add Enemies" type="RichTextLabel" parent="Menu"]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -84.0
+offset_top = -6.5
+offset_bottom = 6.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 8
+bbcode_enabled = true
+text = "[center]Add Enemies
+"
+
+[node name="Allies Options" type="OptionButton" parent="Menu"]
+offset_left = 22.0
+offset_top = 94.0
+offset_right = 116.0
+offset_bottom = 114.0
+theme_override_font_sizes/font_size = 8
+theme_override_icons/arrow = ExtResource("1_hr8uc")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dg4cb")
+theme_override_styles/normal = SubResource("StyleBoxFlat_33fkd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0d66s")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_0d66s")
+item_count = 4
+fit_to_longest_item = false
+popup/item_0/text = "Knight"
+popup/item_0/icon = SubResource("AtlasTexture_4ekx3")
+popup/item_0/id = 0
+popup/item_1/text = "Wizard"
+popup/item_1/icon = SubResource("AtlasTexture_12jbi")
+popup/item_1/id = 1
+popup/item_2/text = "Priest"
+popup/item_2/icon = SubResource("AtlasTexture_u212y")
+popup/item_2/id = 2
+popup/item_3/text = "Fencer"
+popup/item_3/icon = SubResource("AtlasTexture_8jkjt")
+popup/item_3/id = 3
+
+[node name="Enemy Options" type="OptionButton" parent="Menu"]
+offset_left = 209.0
+offset_top = 94.0
+offset_right = 303.0
+offset_bottom = 114.0
+theme_override_font_sizes/font_size = 8
+theme_override_icons/arrow = ExtResource("1_hr8uc")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dg4cb")
+theme_override_styles/normal = SubResource("StyleBoxFlat_33fkd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0d66s")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_0d66s")
+item_count = 5
+fit_to_longest_item = false
+popup/item_0/text = "Goblin"
+popup/item_0/icon = SubResource("AtlasTexture_0pc1w")
+popup/item_0/id = 0
+popup/item_1/text = "Archer"
+popup/item_1/icon = SubResource("AtlasTexture_3g6bv")
+popup/item_1/id = 1
+popup/item_2/text = "Orc Thrower"
+popup/item_2/icon = SubResource("AtlasTexture_u4g4x")
+popup/item_2/id = 2
+popup/item_3/text = "Zombie"
+popup/item_3/icon = SubResource("AtlasTexture_u1o5q")
+popup/item_3/id = 3
+popup/item_4/text = "Ghost"
+popup/item_4/icon = SubResource("AtlasTexture_bb5u8")
+popup/item_4/id = 4
+
+[node name="Add Ally" type="Button" parent="Menu"]
+offset_left = 22.0
+offset_top = 119.0
+offset_right = 97.0
+offset_bottom = 142.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_owuds")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nyvxr")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_17ifg")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j1wr4")
+text = "Add Ally"
+
+[node name="Add Enemy" type="Button" parent="Menu"]
+offset_left = 224.0
+offset_top = 119.0
+offset_right = 311.0
+offset_bottom = 142.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_owuds")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nyvxr")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_17ifg")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_j1wr4")
+text = "Add Enemy"
+
+[node name="Errors" type="VBoxContainer" parent="Menu"]
+anchors_preset = -1
+anchor_left = 0.3625
+anchor_top = 0.388889
+anchor_right = 0.653125
+anchor_bottom = 0.611111
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="NotEnoughAllies" type="RichTextLabel" parent="Menu/Errors"]
+visible = false
+self_modulate = Color(1, 1, 1, 4.17233e-07)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 8
+bbcode_enabled = true
+text = "[center]Four Allies Required!"
+fit_content = true
+
+[node name="NotEnoughAllies2" type="RichTextLabel" parent="Menu/Errors"]
+visible = false
+self_modulate = Color(1, 1, 1, 4.17233e-07)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 8
+bbcode_enabled = true
+text = "[center]At least one enemy required!"
+fit_content = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Menu/Errors"]
+libraries = {
+"": SubResource("AnimationLibrary_mfpmi")
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Menu"]
+anchors_preset = -1
+anchor_left = 0.334375
+anchor_right = 0.69375
+anchor_bottom = 0.488889
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 8
+bbcode_enabled = true
+text = "[center]Please keep in mind that enemies often have their own, isolated strategies, meaning these custom fights probably won't be 'balanced'."
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Menu/Start button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Menu/Add Ally" to="." method="_on_add_ally_pressed"]
+[connection signal="pressed" from="Menu/Add Enemy" to="." method="_on_add_enemy_pressed"]

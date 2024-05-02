@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bie1wyhvxn3vh"]
+
+[ext_resource type="Script" path="res://Resources/Player Actions/Purge Undead/purge_undead.gd" id="1_7m8ej"]
+
+[resource]
+script = ExtResource("1_7m8ej")
+name = "Purge Undead"
+description = "Kill all undead. Does not work if there are living enemies present"
+targetType = 0
+animType = "Attack"

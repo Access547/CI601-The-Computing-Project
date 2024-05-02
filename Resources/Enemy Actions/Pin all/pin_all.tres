@@ -1,0 +1,8 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://d4mm74ee5oynq"]
+
+[ext_resource type="Resource" uid="uid://1mfkkgs1cloy" path="res://Resources/Tile Effects/Pin/pin.tres" id="1_ulomw"]
+[ext_resource type="Script" path="res://Resources/Enemy Actions/Pin all/pin_all.gd" id="2_0n22m"]
+
+[resource]
+script = ExtResource("2_0n22m")
+effect = ExtResource("1_ulomw")

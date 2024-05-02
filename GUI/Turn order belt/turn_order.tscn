@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://chmlmugukefjo"]
+
+[ext_resource type="Script" path="res://GUI/Turn order belt/turn_order.gd" id="1_5hgbb"]
+[ext_resource type="PackedScene" uid="uid://bn72t35ejree3" path="res://GUI/Turn order belt/turn_order_icon.tscn" id="2_ksavt"]
+
+[node name="turn order" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5hgbb")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -52.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+
+[node name="Turn Order Icon" parent="HBoxContainer" instance=ExtResource("2_ksavt")]
+layout_mode = 2
+
+[node name="Turn Order Icon2" parent="HBoxContainer" instance=ExtResource("2_ksavt")]
+layout_mode = 2
+
+[node name="Turn Order Icon3" parent="HBoxContainer" instance=ExtResource("2_ksavt")]
+layout_mode = 2
+
+[node name="Turn Order Icon4" parent="HBoxContainer" instance=ExtResource("2_ksavt")]
+layout_mode = 2
+
+[node name="Turn Order Icon5" parent="HBoxContainer" instance=ExtResource("2_ksavt")]
+layout_mode = 2

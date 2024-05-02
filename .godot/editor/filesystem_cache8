@@ -1,0 +1,219 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1714652986
+battle_init.gd::GDScript::-1::1714515528::0::1::::<>Node<>::
+export_presets.cfg::TextFile::-1::1714602907::0::1::::<><>::
+icon.svg::CompressedTexture2D::6220314284791083210::1706709367::1711642858::1::::<><>::
+infoLabel.gd::GDScript::-1::1714600144::0::1::::<>RichTextLabel<>::
+Main Menu.gd::GDScript::-1::1714648863::0::1::::<>Control<>::
+Main Menu.tscn::PackedScene::4382993654718997148::1714650114::0::1::::<><>::res://Main Menu.gd<>uid://cjxwgikmwoubf::::res://Assets/Sound/bgm.wav
+Marker.gd::GDScript::-1::1714601846::0::1::::<>Sprite2D<>::
+Marker.tscn::PackedScene::8580441697660125165::1714650114::0::1::::<><>::uid://cdinddrogbru5::::res://Sprite effects.png<>res://Marker.gd
+menu.tscn::PackedScene::8060696572131729955::1714338877::0::1::::<><>::
+Sprite effects.png::CompressedTexture2D::5000717783096355314::1714567524::1714567525::1::::<><>::
+turn_order.gd::GDScript::-1::1714217852::0::1::::<>Node<>::
+Tutorial.gd::GDScript::-1::1714648761::0::1::::<>Control<>::
+::res://Assets/::1706709407
+::res://Assets/Art/::1713986539
+isometric tiles.png::CompressedTexture2D::1995074478288865726::1713974724::1713974725::1::::<><>::
+New pointer.png::CompressedTexture2D::5762110498547255835::1713986539::1713986539::1::::<><>::
+Placeholder level.png::CompressedTexture2D::9154514832592636536::1707309925::1707309950::1::::<><>::
+::res://Assets/Sound/::1714646596
+bgm2.wav::AudioStreamWAV::641877756916860170::1714646595::1714646596::1::::<><>::
+bgm.wav::AudioStreamWAV::5453368573286203207::1714646588::1714645958::1::::<><>::
+fireball sound.wav::AudioStreamWAV::6676759396107182318::1714645957::1714645957::1::::<><>::
+select sound.wav::AudioStreamWAV::4145828567721869529::1714645957::1714645957::1::::<><>::
+swing sound.wav::AudioStreamWAV::2167644077919574819::1714645957::1714645957::1::::<><>::
+tp sound.wav::AudioStreamWAV::7508240293469310019::1714645957::1714645957::1::::<><>::
+::res://Combat Manager/::1714653225
+combat_level.gd::GDScript::-1::1714646109::0::1::::CombatManager<>Node2D<>::
+combat_level.tscn::PackedScene::2603537205615650445::1714653225::0::1::::<><>::res://Combat Manager/combat_level.gd<>uid://3oot5pwjas0u::::res://Assets/Art/isometric tiles.png<>res://Combat Manager/TileMap.gd<>uid://b603m3sbrbrt2::::res://GUI/menu.tscn<>uid://duiovebm0dfsn::::res://Marker.tscn<>uid://c4aaktadpqxq6::::res://GUI/Damage Floater/Damage Floater.tscn<>uid://bbap047theegh::::res://GUI/health_bars/health_bars.tscn<>uid://cjxwgikmwoubf::::res://Assets/Sound/bgm.wav<>res://Combat Manager/sfx.gd<>res://GUI/Hoverable.gd
+sfx.gd::GDScript::-1::1714646181::0::1::::<>AudioStreamPlayer<>::
+TileMap.gd::GDScript::-1::1714163237::0::1::::<>TileMap<>::
+::res://Custom menu/::1714653225
+battle_creation_menu.gd::GDScript::-1::1714653223::0::1::::<>Node2D<>::
+battle_creation_menu.tscn::PackedScene::1409020659157265400::1714653225::0::1::::<><>::res://Custom menu/battle_creation_menu.gd<>uid://codheaqc0hjwd::::res://Assets/Art/New pointer.png<>uid://b60cipwhhawpt::::res://Custom menu/theme.tres<>uid://3ypfoe56u8v8::::res://Player Characters/Character Art/Without Outline/MiniSwordMan.png<>uid://b16mv8qsabfit::::res://Player Characters/Character Art/Without Outline/MiniPriest.png<>uid://dj8ysvi2djhjb::::res://Player Characters/Character Art/Without Outline/MiniGoblin.png<>uid://dxdpix8obgrrj::::res://Player Characters/Character Art/Without Outline/MiniArcherMan.png<>uid://dekpngye7xpc6::::res://Player Characters/Character Art/Without Outline/MiniHighPriestess.png<>uid://c3208yv1tymob::::res://Player Characters/Character Art/Without Outline/MiniPrinceMan.png<>uid://dwp2k7aq5qmcy::::res://Player Characters/Character Art/Without Outline/MiniOrcAxeThrower.png<>uid://do15en1hrip08::::res://Player Characters/Character Art/Without Outline/MiniZombie.png<>uid://udajiakla5ms::::res://Player Characters/Character Art/Without Outline/MiniGhost.png
+theme.tres::Theme::4614020822823749049::1714340896::0::1::::<><>::
+::res://Demo stuff/::1714653225
+Deep caves.png::CompressedTexture2D::8069581895110883633::1714651984::1714651984::1::::<><>::
+demo_level.gd::GDScript::-1::1714423602::0::1::::<>Node2D<>::
+demo_level.tscn::PackedScene::1256893652885045929::1714653225::0::1::::<><>::uid://cko5r50hbd3es::::res://Demo stuff/forest_.png<>res://Demo stuff/demo_level.gd<>uid://br2yuoffg534s::::res://Demo stuff/forest_ [resources].png<>uid://3m6ko823bdhc::::res://Demo stuff/Player/player.tscn<>uid://4pbb8xmolq5d::::res://Demo stuff/Enemies/Archer/archer_enemy.tscn<>uid://dm773nch2dgov::::res://Demo stuff/Deep caves.png<>uid://c1u0l7w1mpevi::::res://NPCs/Archer/archer.tscn<>uid://dr8vpr3txow2b::::res://Demo stuff/Enemies/Goblin/goblin_enemy.tscn<>uid://culjrf3usa02p::::res://NPCs/Goblin/goblin2.tscn<>uid://je6vruugulkk::::res://Assets/Sound/bgm2.wav<>uid://c71q47khrod5w::::res://Demo stuff/Enemies/Orc Thrower/orc_thrower.tscn<>uid://dpcj6ypdkeijl::::res://NPCs/Orc Thrower/Orc Thrower.tscn<>uid://cf2byx1bm17c0::::res://Demo stuff/Enemies/Zombie/zombie_enemy.tscn<>uid://by8f8wkgndm1n::::res://NPCs/Zombie/zombie.tscn
+demo_loader.gd::GDScript::-1::1714423426::0::1::::<>Node<>::
+forest_ [resources].png::CompressedTexture2D::3636862891891090316::1714383646::1714383646::1::::<><>::
+forest_.png::CompressedTexture2D::5505484575242889426::1714383459::1714383459::1::::<><>::
+::res://Demo stuff/Enemies/::1714653349
+::res://Demo stuff/Enemies/Archer/::1714423426
+archer_enemy.gd::GDScript::-1::1714423426::0::1::::<>Node2D<>::
+archer_enemy.tscn::PackedScene::2066506403965949111::1714397821::0::1::::<><>::uid://dxdpix8obgrrj::::res://Player Characters/Character Art/Without Outline/MiniArcherMan.png<>res://Demo stuff/Enemies/Archer/archer_enemy.gd
+::res://Demo stuff/Enemies/Ghost/::1714653361
+goblin_enemy.tscn::PackedScene::8454864935102396857::1714653361::0::1::::<><>::res://Demo stuff/Enemies/Archer/archer_enemy.gd<>uid://dj8ysvi2djhjb::::res://Player Characters/Character Art/Without Outline/MiniGoblin.png
+::res://Demo stuff/Enemies/Goblin/::1714467376
+goblin_enemy.tscn::PackedScene::8421899639612556975::1714467376::0::1::::<><>::res://Demo stuff/Enemies/Archer/archer_enemy.gd<>uid://dj8ysvi2djhjb::::res://Player Characters/Character Art/Without Outline/MiniGoblin.png
+::res://Demo stuff/Enemies/Orc Thrower/::1714653226
+orc_thrower.tscn::PackedScene::7073583141852867198::1714653226::0::1::::<><>::res://Demo stuff/Enemies/Archer/archer_enemy.gd<>uid://dpcj6ypdkeijl::::res://NPCs/Orc Thrower/Orc Thrower.tscn<>uid://dwp2k7aq5qmcy::::res://Player Characters/Character Art/Without Outline/MiniOrcAxeThrower.png
+::res://Demo stuff/Enemies/Zombie/::1714653226
+zombie_enemy.tscn::PackedScene::5179628609246960525::1714653226::0::1::::<><>::res://Demo stuff/Enemies/Archer/archer_enemy.gd<>uid://do15en1hrip08::::res://Player Characters/Character Art/Without Outline/MiniZombie.png
+::res://Demo stuff/Player/::1714580413
+Player.gd::GDScript::-1::1714580413::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::1991961027198098020::1714475593::0::1::::<><>::res://Demo stuff/Player/Player.gd<>uid://3ypfoe56u8v8::::res://Player Characters/Character Art/Without Outline/MiniSwordMan.png
+::res://GUI/::1714653225
+damage_number.gd::GDScript::-1::1714602051::0::1::::<>RichTextLabel<>::
+damage_number.tscn::PackedScene::189682056234180542::1714650114::0::1::::<><>::res://GUI/damage_number.gd
+grid_marker.tscn::PackedScene::1014616763072435202::1713606950::0::1::::<><>::uid://v5k4xbv11r1y::::res://GUI/Pointer.png
+Hoverable.gd::GDScript::-1::1714217792::0::1::::<>Area2D<>::
+info_label.tscn::PackedScene::5235241404723850905::1714600309::0::1::::<><>::res://infoLabel.gd
+menu.gd::GDScript::-1::1714600582::0::1::::Menu<>Control<>::
+menu.tscn::PackedScene::4615607284176415389::1714653225::0::1::::<><>::res://GUI/menu.gd<>uid://bo1a1c7fa0bdk::::res://GUI/Panel Style.tres<>uid://5a440qj4vlvd::::res://GUI/text.tres
+Panel Style.tres::StyleBoxFlat::3422784901581238492::1713526169::0::1::::<><>::
+Pointer.png::CompressedTexture2D::1536557217543168800::1710333486::1711643014::1::::<><>::
+text.tres::Theme::2107479228203576593::1713874045::0::1::::<><>::
+tutorial.tscn::PackedScene::4092261604440247774::1714653225::0::1::::<><>::res://Tutorial.gd<>uid://djhrgihp75vnw::::res://Tutorial/1.PNG<>uid://da8i7rvfsv6d7::::res://Tutorial/ARROWLEFT.png<>uid://dooc1lb1epg5q::::res://Tutorial/2.PNG<>uid://bh7xi4c1iwli7::::res://Tutorial/ARROWRIGHT.png<>uid://b62gxt1hfqvyj::::res://Tutorial/3.PNG<>uid://0lkiryqrqksh::::res://Tutorial/X.png
+::res://GUI/Damage Floater/::1714381486
+Damage Floater.gd::GDScript::-1::1714306528::0::1::::<>RichTextLabel<>::
+Damage Floater.tscn::PackedScene::6808336688928850283::1714381486::0::1::::<><>::res://GUI/Damage Floater/Damage Floater.gd
+::res://GUI/health_bars/::1714601993
+health_bar.gd::GDScript::-1::1714601993::0::1::::<>TextureRect<>::
+health_bars.tscn::PackedScene::2457566500553937747::1714381486::0::1::::<><>::res://GUI/health_bars/health_bar_controller.gd<>uid://cuvfwxuj225uc::::res://icon.svg<>res://GUI/health_bars/health_bar.gd
+health_bar_controller.gd::GDScript::-1::1714214895::0::1::::<>Control<>::
+::res://GUI/Turn order belt/::1713990381
+turn_order.gd::GDScript::-1::1711209777::0::1::::<>Control<>::
+turn_order.tscn::PackedScene::5289626183006500500::1713990381::0::1::::<><>::res://GUI/Turn order belt/turn_order.gd<>uid://bn72t35ejree3::::res://GUI/Turn order belt/turn_order_icon.tscn
+turn_order_icon.gd::GDScript::-1::1711209182::0::1::::<>TextureRect<>::
+turn_order_icon.tscn::PackedScene::3366610545198700620::1713990381::0::1::::<><>::res://GUI/Turn order belt/turn_order_icon.gd<>uid://cuvfwxuj225uc::::res://icon.svg
+::res://NPCs/::1714652789
+bgm.wav::AudioStreamWAV::2952089821948291522::1714646470::1714646472::1::::<><>::
+enemy.gd::GDScript::-1::1714060745::0::1::::Enemy<>Character<>::
+enemy.tscn::PackedScene::7805653428664683242::1714650114::0::1::::<><>::uid://cuvfwxuj225uc::::res://icon.svg<>res://NPCs/enemy.gd<>uid://doen0fhn7ngy5::::res://Resources/Enemy Actions/Rear Attack/rear_attack.tres
+::res://NPCs/Archer/::1714653226
+Archer.gd::GDScript::-1::1714305019::0::1::::<>Enemy<>::
+archer.tscn::PackedScene::6640578141539208794::1714653226::0::1::::<><>::res://NPCs/Archer/Archer.gd<>uid://d4mm74ee5oynq::::res://Resources/Enemy Actions/Pin all/pin_all.tres<>uid://cswlmh186o5dk::::res://Resources/Enemy Actions/Certain Death/certain_death.tres<>uid://doen0fhn7ngy5::::res://Resources/Enemy Actions/Rear Attack/rear_attack.tres<>uid://dxdpix8obgrrj::::res://Player Characters/Character Art/Without Outline/MiniArcherMan.png
+::res://NPCs/Ghost/::1714653226
+Ghost.gd::GDScript::-1::1714653097::0::1::::<>Enemy<>::
+Ghost.tscn::PackedScene::3488727582632553747::1714653226::0::1::::<><>::res://NPCs/Ghost/Ghost.gd<>uid://d4mm74ee5oynq::::res://Resources/Enemy Actions/Pin all/pin_all.tres<>uid://udajiakla5ms::::res://Player Characters/Character Art/Without Outline/MiniGhost.png<>uid://dg45ysy077e3y::::res://Resources/Enemy Actions/Mortal Reminder/mortal_reminder.tres
+::res://NPCs/Goblin/::1714653225
+Deep caves.png::CompressedTexture2D::2351199111060584545::1714651975::1714651970::1::::<><>::
+goblin2.tscn::PackedScene::6199903513676855465::1714653225::0::1::::<><>::res://NPCs/Goblin/Goblin.gd<>uid://cswlmh186o5dk::::res://Resources/Enemy Actions/Certain Death/certain_death.tres<>uid://btsgwoym8bbum::::res://Resources/Enemy Actions/Column Attack/column_attack.tres<>uid://doen0fhn7ngy5::::res://Resources/Enemy Actions/Rear Attack/rear_attack.tres
+Goblin.gd::GDScript::-1::1714218027::0::1::::<>Enemy<>::
+::res://NPCs/Orc Thrower/::1714653226
+Orc Thrower.gd::GDScript::-1::1714651222::0::1::::<>Enemy<>::
+Orc Thrower.tscn::PackedScene::8216826557586164541::1714653226::0::1::::<><>::res://NPCs/Orc Thrower/Orc Thrower.gd<>uid://d2tlg58go4oso::::res://Resources/Enemy Actions/Blind Throw/blind_throw.tres<>uid://dwp2k7aq5qmcy::::res://Player Characters/Character Art/Without Outline/MiniOrcAxeThrower.png
+::res://NPCs/Zombie/::1714653226
+zombie.gd::GDScript::-1::1714651730::0::1::::<>Enemy<>::
+zombie.tscn::PackedScene::4139441084304409689::1714653226::0::1::::<><>::res://NPCs/Zombie/zombie.gd<>uid://btsgwoym8bbum::::res://Resources/Enemy Actions/Column Attack/column_attack.tres<>uid://do15en1hrip08::::res://Player Characters/Character Art/Without Outline/MiniZombie.png
+::res://Player Characters/::1714653225
+character.gd::GDScript::-1::1714602168::0::1::::Character<>Node2D<>::
+character.tscn::PackedScene::4700802528598285661::1714653225::0::1::::<><>::res://Player Characters/character.gd<>uid://codheaqc0hjwd::::res://Assets/Art/New pointer.png
+Fencer.gd::GDScript::-1::1714505412::0::1::::<>Character<>::
+Fencer.tscn::PackedScene::8320435458713513138::1714566553::0::1::::<><>::res://Player Characters/Fencer.gd<>uid://c3208yv1tymob::::res://Player Characters/Character Art/Without Outline/MiniPrinceMan.png<>uid://codheaqc0hjwd::::res://Assets/Art/New pointer.png
+Priest.gd::GDScript::-1::1714505390::0::1::::<>Character<>::
+Priest.tscn::PackedScene::1045410675115218255::1714566553::0::1::::<><>::res://Player Characters/Priest.gd<>uid://dekpngye7xpc6::::res://Player Characters/Character Art/Without Outline/MiniHighPriestess.png<>uid://codheaqc0hjwd::::res://Assets/Art/New pointer.png
+wizard.gd::GDScript::-1::1714505390::0::1::::<>Character<>::
+Wizard.tscn::PackedScene::6814491258727455779::1714566553::0::1::::<><>::res://Player Characters/wizard.gd<>uid://b16mv8qsabfit::::res://Player Characters/Character Art/Without Outline/MiniPriest.png<>uid://codheaqc0hjwd::::res://Assets/Art/New pointer.png
+::res://Player Characters/Character Art/::1713976235
+::res://Player Characters/Character Art/Without Outline/::1714652249
+MiniAngel.png::CompressedTexture2D::1200735761816534936::1714470338::1714470338::1::::<><>::
+MiniArchAngel.png::CompressedTexture2D::2889735791909639288::1714470338::1714470338::1::::<><>::
+MiniArcherMan.png::CompressedTexture2D::8780724888912250831::1713976858::1713976858::1::::<><>::
+MiniBattlePriest.png::CompressedTexture2D::1160371975570728397::1714470338::1714470338::1::::<><>::
+MiniCavalierMan.png::CompressedTexture2D::1265222837085941362::1713976858::1713976858::1::::<><>::
+MiniCrossBowMan.png::CompressedTexture2D::1317264857918048320::1713976858::1713976858::1::::<><>::
+MiniCrusader.png::CompressedTexture2D::6416664581648741074::1714470338::1714470338::1::::<><>::
+MiniCrusaderArcher.png::CompressedTexture2D::2989346915434695864::1714470338::1714470338::1::::<><>::
+MiniCrusaderCaptain.png::CompressedTexture2D::640705677536092751::1714470338::1714470338::1::::<><>::
+MiniCrusaderCaptainFlagless.png::CompressedTexture2D::7193525379778480982::1714470338::1714470338::1::::<><>::
+MiniCrusaderFlag.png::CompressedTexture2D::729009729278128671::1714470338::1714470338::1::::<><>::
+MiniCrusaderHorseman.png::CompressedTexture2D::4396875772098054770::1714470338::1714470338::1::::<><>::
+MiniGhost.png::CompressedTexture2D::1409986498823861266::1714652249::1714652249::1::::<><>::
+MiniGoblin.png::CompressedTexture2D::7860576578402166439::1713976846::1713976847::1::::<><>::
+MiniGoblinThief.png::CompressedTexture2D::8648171038486057224::1713976846::1713976847::1::::<><>::
+MiniHalberdMan.png::CompressedTexture2D::3577566378861903487::1713976858::1713976858::1::::<><>::
+MiniHighPriestess.png::CompressedTexture2D::7461595525825123799::1714470338::1714470338::1::::<><>::
+MiniHorseMan.png::CompressedTexture2D::5159138562545025055::1713976858::1713976858::1::::<><>::
+MiniKingMan.png::CompressedTexture2D::1165207552765284535::1713976858::1713976858::1::::<><>::
+MiniOrc.png::CompressedTexture2D::258833021548493807::1713976846::1713976847::1::::<><>::
+MiniOrcAxeThrower.png::CompressedTexture2D::8736041175685560044::1713976846::1713976847::1::::<><>::
+MiniOrcBerserker.png::CompressedTexture2D::8002958916388731353::1713976847::1713976847::1::::<><>::
+MiniOrcVeteran.png::CompressedTexture2D::2446204560814490626::1713976847::1713976847::1::::<><>::
+MiniOrcWarChief.png::CompressedTexture2D::2699671129886397579::1713976847::1713976847::1::::<><>::
+MiniOrcWarrior.png::CompressedTexture2D::3513611738067505870::1713976847::1713976847::1::::<><>::
+MiniPaladin2.png::CompressedTexture2D::3688313919415142891::1714470338::1714470338::1::::<><>::
+MiniPaladin3.png::CompressedTexture2D::1015284528146012019::1714470338::1714470338::1::::<><>::
+MiniPaladin.png::CompressedTexture2D::9189203418897989726::1714470338::1714470338::1::::<><>::
+MiniPriest.png::CompressedTexture2D::4276094193048304895::1714470338::1714470338::1::::<><>::
+MiniPrinceMan.png::CompressedTexture2D::6795445338837711229::1713976858::1713976858::1::::<><>::
+MiniShieldMan.png::CompressedTexture2D::7810547619953651912::1713976858::1713976858::1::::<><>::
+MiniSpearMan.png::CompressedTexture2D::623951770409926237::1713976858::1713976858::1::::<><>::
+MiniSwordMan.png::CompressedTexture2D::2015753114734796607::1713976858::1713976858::1::::<><>::
+MiniThrowingAxe.png::CompressedTexture2D::4980388942825544263::1713976847::1713976847::1::::<><>::
+MiniWargRider.png::CompressedTexture2D::5221942689430419416::1713976847::1713976847::1::::<><>::
+MiniWolfRider.png::CompressedTexture2D::2763928945996331866::1713976847::1713976847::1::::<><>::
+MiniZombie.png::CompressedTexture2D::8197409059885489247::1714652249::1714652249::1::::<><>::
+::res://Resources/::1714039821
+::res://Resources/Enemy Actions/::1714652966
+generic_enemy_action.gd::GDScript::-1::1714129019::0::1::::EnemyAction<>Resource<>::
+::res://Resources/Enemy Actions/Blind Throw/::1714651434
+blind_throw.gd::GDScript::-1::1714650679::0::1::::<>EnemyAction<>::
+blind_throw.tres::Resource::9094264235288701682::1714651434::0::1::::<><>::res://Resources/Enemy Actions/Blind Throw/blind_throw.gd<>uid://di4l6ux71j2og::::res://Resources/Tile Effects/Basic Attack/basic_attack.tres
+::res://Resources/Enemy Actions/Certain Death/::1714217528
+certain_death.gd::GDScript::-1::1714217488::0::1::::<>EnemyAction<>::
+certain_death.tres::Resource::6082346589277136232::1714217528::0::1::::<><>::uid://di4l6ux71j2og::::res://Resources/Tile Effects/Basic Attack/basic_attack.tres<>res://Resources/Enemy Actions/Certain Death/certain_death.gd
+::res://Resources/Enemy Actions/Column Attack/::1714212225
+column_attack.gd::GDScript::-1::1714212225::0::1::::<>EnemyAction<>::
+column_attack.tres::Resource::3757571874802872144::1714057478::0::1::::<><>::res://Resources/Enemy Actions/Column Attack/column_attack.gd<>uid://di4l6ux71j2og::::res://Resources/Tile Effects/Basic Attack/basic_attack.tres
+::res://Resources/Enemy Actions/Mortal Reminder/::1714653064
+mortal_reminder.gd::GDScript::-1::1714653042::0::1::::<>EnemyAction<>::
+mortal_reminder.tres::Resource::7642127420287462656::1714653064::0::1::::<><>::uid://di4l6ux71j2og::::res://Resources/Tile Effects/Basic Attack/basic_attack.tres<>res://Resources/Enemy Actions/Mortal Reminder/mortal_reminder.gd
+::res://Resources/Enemy Actions/Pin all/::1714304697
+pin_all.gd::GDScript::-1::1714304664::0::1::::<>EnemyAction<>::
+pin_all.tres::Resource::9220298328527895930::1714304697::0::1::::<><>::uid://1mfkkgs1cloy::::res://Resources/Tile Effects/Pin/pin.tres<>res://Resources/Enemy Actions/Pin all/pin_all.gd
+::res://Resources/Enemy Actions/Rear Attack/::1714320383
+rear_attack.gd::GDScript::-1::1714136890::0::1::::<>EnemyAction<>::
+rear_attack.tres::Resource::8150997612845905710::1714320383::0::1::::<><>::uid://di4l6ux71j2og::::res://Resources/Tile Effects/Basic Attack/basic_attack.tres<>res://Resources/Enemy Actions/Rear Attack/rear_attack.gd
+::res://Resources/Grid Info/::1714153036
+Grid_info.gd::GDScript::-1::1714153036::0::1::::GridInfo<>Resource<>::
+::res://Resources/Player Actions/::1714646272
+generic_action.gd::GDScript::-1::1714558688::0::1::::Action<>Resource<>::
+::res://Resources/Player Actions/Exploit Weakness/::1714646298
+exploit_weakness.gd::GDScript::-1::1714646298::0::1::::<>Action<>::
+exploit_weakness.tres::Resource::7101407516986804362::1714479716::0::1::::<><>::res://Resources/Player Actions/Exploit Weakness/exploit_weakness.gd
+::res://Resources/Player Actions/Final Cut/::1714646298
+final_cut.gd::GDScript::-1::1714646298::0::1::::<>Action<>::
+final_cut.tres::Resource::8647037610920484682::1714478867::0::1::::<><>::res://Resources/Player Actions/Final Cut/final_cut.gd
+::res://Resources/Player Actions/Fireball/::1714646322
+fireball.gd::GDScript::-1::1714646322::0::1::::<>Action<>::
+fireball.tres::Resource::7768779830877552384::1714562394::0::1::::<><>::res://Resources/Player Actions/Fireball/fireball.gd
+::res://Resources/Player Actions/Fleche/::1714646298
+fleche.gd::GDScript::-1::1714646298::0::1::::<>Action<>::
+fleche.tres::Resource::1732082285775456502::1714478985::0::1::::<><>::res://Resources/Player Actions/Fleche/fleche.gd
+::res://Resources/Player Actions/Heal/::1714646396
+heal.gd::GDScript::-1::1714646396::0::1::::<>Action<>::
+heal.tres::Resource::2124463290630356924::1714600582::0::1::::<><>::res://Resources/Player Actions/Heal/heal.gd
+::res://Resources/Player Actions/Mass Teleport/::1714646356
+mass_teleport.gd::GDScript::-1::1714646356::0::1::::<>Action<>::
+mass_teleport.tres::Resource::5031216571744403406::1714220466::0::1::::<><>::res://Resources/Player Actions/Mass Teleport/mass_teleport.gd
+::res://Resources/Player Actions/Purge Undead/::1714646332
+purge_undead.gd::GDScript::-1::1714646332::0::1::::<>Action<>::
+purge_undead.tres::Resource::2957808145450893049::1714479747::0::1::::<><>::res://Resources/Player Actions/Purge Undead/purge_undead.gd
+::res://Resources/Player Actions/Reinforce/::1714646396
+reinforce.gd::GDScript::-1::1714646396::0::1::::<>Action<>::
+reinforce.tres::Resource::7428603944251216255::1714478867::0::1::::<><>::res://Resources/Player Actions/Reinforce/reinforce.gd
+::res://Resources/Player Actions/Riposte/::1714646259
+riposte.gd::GDScript::-1::1714646259::0::1::::<>Action<>::
+riposte.tres::Resource::7724470368973478327::1714479716::0::1::::<><>::res://Resources/Player Actions/Riposte/riposte.gd
+::res://Resources/Player Actions/Slash/::1714646232
+slash_action.gd::GDScript::-1::1714646232::0::1::::<>Action<>::
+slash_action.tres::Resource::8322539831592482900::1714474984::0::1::::<><>::res://Resources/Player Actions/Slash/slash_action.gd
+::res://Resources/Tile Effects/::1714304561
+generic_tile_effect.gd::GDScript::-1::1714059799::0::1::::TileEffect<>Resource<>::
+::res://Resources/Tile Effects/Basic Attack/::1714646232
+basic_attack.gd::GDScript::-1::1714129019::0::1::::<>TileEffect<>::
+basic_attack.tres::Resource::7781364089069346806::1714646232::0::1::::<><>::res://Resources/Tile Effects/Basic Attack/basic_attack.gd
+::res://Resources/Tile Effects/Pin/::1714305248
+pin.gd::GDScript::-1::1714305248::0::1::::<>TileEffect<>::
+pin.tres::Resource::1850004445895442704::1714304639::0::1::::<><>::res://Resources/Tile Effects/Pin/pin.gd
+::res://Tutorial/::1714647158
+1.PNG::CompressedTexture2D::7806455623466402356::1714647157::1714647158::1::::<><>::
+2.PNG::CompressedTexture2D::8170975595684573532::1714647157::1714647158::1::::<><>::
+3.PNG::CompressedTexture2D::4618419449482081469::1714647157::1714647158::1::::<><>::
+ARROWLEFT.png::CompressedTexture2D::7227930323900301866::1714602604::1714602604::1::::<><>::
+ARROWRIGHT.png::CompressedTexture2D::2945214981933760844::1714602607::1714602607::1::::<><>::
+X.png::CompressedTexture2D::1778051633246954915::1714602619::1714602619::1::::<><>::

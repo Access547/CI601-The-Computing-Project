@@ -1,0 +1,66 @@
+[gd_scene load_steps=4 format=3 uid="uid://cx5bhlinrqda"]
+
+[ext_resource type="Script" path="res://GUI/damage_number.gd" id="1_1ugbt"]
+
+[sub_resource type="Animation" id="Animation_bvwwo"]
+resource_name = "anim"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -26)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1, 1.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(2),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"QueueFree"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fwxc1"]
+_data = {
+"anim": SubResource("Animation_bvwwo")
+}
+
+[node name="DamageNumber" type="RichTextLabel"]
+offset_top = -12.2353
+offset_right = 40.0
+offset_bottom = 27.7647
+theme_override_font_sizes/normal_font_size = 8
+bbcode_enabled = true
+text = "[center][wave]10!"
+fit_content = true
+script = ExtResource("1_1ugbt")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_fwxc1")
+}
+autoplay = "anim"

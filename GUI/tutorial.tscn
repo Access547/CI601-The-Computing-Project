@@ -1,0 +1,174 @@
+[gd_scene load_steps=8 format=3 uid="uid://bykk7lb2yq7b3"]
+
+[ext_resource type="Script" path="res://Tutorial.gd" id="1_g1ipa"]
+[ext_resource type="Texture2D" uid="uid://djhrgihp75vnw" path="res://Tutorial/1.PNG" id="2_1ys53"]
+[ext_resource type="Texture2D" uid="uid://da8i7rvfsv6d7" path="res://Tutorial/ARROWLEFT.png" id="2_dbmg4"]
+[ext_resource type="Texture2D" uid="uid://dooc1lb1epg5q" path="res://Tutorial/2.PNG" id="3_kcytu"]
+[ext_resource type="Texture2D" uid="uid://bh7xi4c1iwli7" path="res://Tutorial/ARROWRIGHT.png" id="3_wt05p"]
+[ext_resource type="Texture2D" uid="uid://b62gxt1hfqvyj" path="res://Tutorial/3.PNG" id="4_eatn1"]
+[ext_resource type="Texture2D" uid="uid://0lkiryqrqksh" path="res://Tutorial/X.png" id="4_we4gj"]
+
+[node name="Tutorial" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_g1ipa")
+pages = Array[Texture]([ExtResource("2_1ys53"), ExtResource("3_kcytu"), ExtResource("3_kcytu"), ExtResource("4_eatn1")])
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_1ys53")
+expand_mode = 2
+
+[node name="left" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 38.0
+offset_top = -26.0
+offset_right = 63.0
+offset_bottom = -1.0
+grow_vertical = 0
+texture_normal = ExtResource("2_dbmg4")
+stretch_mode = 0
+
+[node name="right" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -25.0
+offset_top = -25.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("3_wt05p")
+stretch_mode = 0
+
+[node name="exit" type="TextureButton" parent="."]
+layout_mode = 1
+offset_right = 25.0
+offset_bottom = 25.0
+texture_normal = ExtResource("4_we4gj")
+stretch_mode = 0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." groups=["1"]]
+layout_mode = 0
+offset_left = 110.0
+offset_top = 47.0
+offset_right = 225.0
+offset_bottom = 87.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 8
+text = "This is you! In the demo level, you can explore using WASD"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="." groups=["1"]]
+layout_mode = 0
+offset_left = 114.0
+offset_top = 135.0
+offset_right = 229.0
+offset_bottom = 175.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 8
+text = "Characters like this archer can be walked into to initiate combat with them!"
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="." groups=["2"]]
+visible = false
+layout_mode = 0
+offset_left = 196.0
+offset_top = 16.0
+offset_right = 311.0
+offset_bottom = 56.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 8
+text = "This is the combat level! This is where you fight enemies using your party"
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="." groups=["2"]]
+visible = false
+layout_mode = 0
+offset_left = 42.0
+offset_top = 64.0
+offset_right = 157.0
+offset_bottom = 173.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 8
+text = "Combat takes place on a grid. Grey squares are where enemies are going to attack. You can hover over tiles to see how much damage it's going to be attacked with! Some attacks have hidden effects!"
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="." groups=["2"]]
+visible = false
+layout_mode = 0
+offset_left = 203.0
+offset_top = 100.0
+offset_right = 318.0
+offset_bottom = 140.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 8
+text = "These are the enemies! Up to four enemies can be fought at once"
+
+[node name="RichTextLabel6" type="RichTextLabel" parent="." groups=["3"]]
+visible = false
+layout_mode = 0
+offset_left = 216.0
+offset_top = 112.0
+offset_right = 331.0
+offset_bottom = 152.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 8
+text = "Enemy tiles can be targeted with WASD or 1,2,3,4"
+
+[node name="RichTextLabel7" type="RichTextLabel" parent="." groups=["3"]]
+visible = false
+layout_mode = 0
+offset_left = 184.0
+offset_top = 17.0
+offset_right = 299.0
+offset_bottom = 57.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 8
+text = "Player tiles are targetted with WASD. A red square shows your current target"
+
+[node name="RichTextLabel8" type="RichTextLabel" parent="." groups=["4"]]
+visible = false
+layout_mode = 0
+offset_left = 203.0
+offset_top = 16.0
+offset_right = 318.0
+offset_bottom = 68.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 8
+text = "Select actions on the menu by pressing the corrosponding key. To use an action, you press 1!"
+
+[node name="RichTextLabel9" type="RichTextLabel" parent="." groups=["4"]]
+visible = false
+layout_mode = 0
+offset_left = 55.0
+offset_top = 101.0
+offset_right = 170.0
+offset_bottom = 153.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 8
+text = "Hovering over actions with your mouse shows a description of what it does "
+
+[connection signal="pressed" from="left" to="." method="_on_left_pressed"]
+[connection signal="pressed" from="right" to="." method="_on_right_pressed"]
+[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]

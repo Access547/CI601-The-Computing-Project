@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dixiw0d17ijme"]
+
+[ext_resource type="Script" path="res://Resources/Player Actions/Fireball/fireball.gd" id="1_0bg2s"]
+
+[resource]
+script = ExtResource("1_0bg2s")
+name = "Fireball"
+description = "Hurl a fireball at all your enemies, damaging them"
+targetType = 0
+animType = "Attack"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://5jdunu0if7do"]
+
+[ext_resource type="Script" path="res://Resources/Player Actions/Heal/heal.gd" id="1_0m5ke"]
+
+[resource]
+script = ExtResource("1_0m5ke")
+name = "Heal"
+description = "Heal all allies"
+targetType = 2
+animType = "Attack"

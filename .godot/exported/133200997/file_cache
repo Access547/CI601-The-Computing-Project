@@ -1,0 +1,45 @@
+res://Combat Manager/combat_level.tscn::05e1c1b6e95a994e97655421128db805::1714602745::res://.godot/exported/133200997/export-a1094f4016169085f2f7c5d4f897c428-combat_level.scn
+res://GUI/Damage Floater/Damage Floater.tscn::17fb1bd8c419be46db8e9a32f5312b42::1714381486::res://.godot/exported/133200997/export-a92528497897808c671ff3168d2c3800-Damage Floater.scn
+res://GUI/health_bars/health_bars.tscn::4ef656c10d34e433e7e69b88eb519292::1714381486::res://.godot/exported/133200997/export-db2ee5942f514963c15d9f5a0ae7fc2c-health_bars.scn
+res://GUI/Turn order belt/turn_order.tscn::8e05765e1d72b07a144de478a8536f02::1713990381::res://.godot/exported/133200997/export-3eb1162e7ca61d9ca6295a332630d76a-turn_order.scn
+res://GUI/Turn order belt/turn_order_icon.tscn::ad27649f43e6fdeeb0e806952362b896::1713990381::res://.godot/exported/133200997/export-ea63ee4a2caaec4ebd7ab42a7c303e77-turn_order_icon.scn
+res://GUI/grid_marker.tscn::b60fe86e1cb096a921fbab16b626fe70::1713606950::res://.godot/exported/133200997/export-e9c8f32ed75b843c5dea207122244ed9-grid_marker.scn
+res://GUI/menu.tscn::77d28c45069ed697e52dc06328cada0d::1714602881::res://.godot/exported/133200997/export-2e42d080359af6ba368cac4ab2cdcfa0-menu.scn
+res://GUI/Panel Style.tres::168aed67fb3b6c90e81dfbba13a35b82::1713526169::res://.godot/exported/133200997/export-d49d4649112cee7ce942263486c687fd-Panel Style.res
+res://GUI/text.tres::b3d405cd165e3cd182b0707f135dfb42::1713874045::res://.godot/exported/133200997/export-c96e31cd5122d443b019da95ff328aec-text.res
+res://NPCs/Basic Enemy/Basic Enemy.tscn::e58174989d866d395d882d439865236c::1711636002::res://.godot/exported/133200997/export-3bf5245dcb1c1ce2fe851b45a4cde092-Basic Enemy.scn
+res://NPCs/Goblin/goblin2.tscn::010cc974f2326e8b436fe8f730434894::1714602745::res://.godot/exported/133200997/export-9c5cd91ee5077cc0939abd9704f8eb64-goblin2.scn
+res://NPCs/enemy.tscn::e343466f8fe5d7a629d01e61803f016b::1714602745::res://.godot/exported/133200997/export-83b05c66c414183e12e7668c4a6256c5-enemy.scn
+res://Player Characters/character.tscn::890bdd3031e702849317960e7c0f038a::1714602745::res://.godot/exported/133200997/export-b0550d95dddc97a313b9270a53aaca97-character.scn
+res://Resources/Enemy Actions/Certain Death/certain_death.tres::d6796038166ee4cabbf9169f93ca5c19::1714217528::res://.godot/exported/133200997/export-7575bc38148503251c1080a267034225-certain_death.res
+res://Resources/Enemy Actions/Column Attack/column_attack.tres::0fbea37dab05587d858f2c37b382e4b8::1714057478::res://.godot/exported/133200997/export-3ada2def13a65b9ff44336cdd33f7e73-column_attack.res
+res://Resources/Enemy Actions/Rear Attack/rear_attack.tres::ba56fb8f0e0e1df70c2ec5e9013bc1ec::1714320383::res://.godot/exported/133200997/export-894c3e8eca278665f2c19d047bade8db-rear_attack.res
+res://Resources/Player Actions/Mass Teleport/mass_teleport.tres::9f82e4b801a1e80ce46b1adc19713dc2::1714220466::res://.godot/exported/133200997/export-a62c9e938b576c961c017ae557e633d9-mass_teleport.res
+res://Resources/Player Actions/Slash/slash_action.tres::703d20ab2e0a0e89a6e9991e5c2c9437::1714474984::res://.godot/exported/133200997/export-6209e9d64a7f5e838c7783f343c27c6f-slash_action.res
+res://Resources/Tile Effects/Basic Attack/basic_attack.tres::c929e05dba8e2df1007e7afa5a9b25e9::1714561342::res://.godot/exported/133200997/export-143e1efb649b11eccad368da73bebab8-basic_attack.res
+res://Custom menu/battle_creation_menu.tscn::c5bbd4a6a8b4d65863c2cfac5c9715e9::1714602745::res://.godot/exported/133200997/export-63a2167e4e6442fc65d5113af9f9bdb9-battle_creation_menu.scn
+res://Custom menu/theme.tres::6a42e32ce3d8721ac849c41731c2fff0::1714340896::res://.godot/exported/133200997/export-3a7f5a7cdb4f49984a54c52d5af976d7-theme.res
+res://Demo stuff/Enemies/Archer/archer_enemy.tscn::6ffd6af83af5aa6c81787abb30eae93d::1714397821::res://.godot/exported/133200997/export-a549f3ef909f6b5eb853a27a77c62ca1-archer_enemy.scn
+res://Demo stuff/Enemies/Goblin/goblin_enemy.tscn::64199811149e2a4bf3db7f015e279fae::1714467376::res://.godot/exported/133200997/export-66b77915fb69889020d30948069a3c31-goblin_enemy.scn
+res://Demo stuff/Player/player.tscn::c5d1c76a45ab9676118d17090ead3429::1714475593::res://.godot/exported/133200997/export-f04080581b94218e11204e05e21a3b6a-player.scn
+res://Demo stuff/demo_level.tscn::25629b6240ba3ff60921ba8852d7d2c2::1714602745::res://.godot/exported/133200997/export-60a8de40d72334fc98d0f857466fb4bb-demo_level.scn
+res://NPCs/Archer/archer.tscn::9633982adef6036198b09d5ad76b0156::1714381486::res://.godot/exported/133200997/export-126381271719d3fc955b61b2bc3230b1-archer.scn
+res://Resources/Enemy Actions/Pin all/pin_all.tres::fb15cb23a33eac6b2bba35bdaf9f6025::1714304697::res://.godot/exported/133200997/export-da63cf9dd3013b7619462a5af9cb9c3e-pin_all.res
+res://Resources/Tile Effects/Pin/pin.tres::5d9245ddd14e3cc4ab2e2d9d044f14a7::1714304639::res://.godot/exported/133200997/export-0af7c7f36cf917334c78c46e7ced2cd1-pin.res
+res://Main Menu.tscn::607aaaf034bac75035fdc52ec57fe23e::1714602745::res://.godot/exported/133200997/export-a33d09f771cd04e34b900b4e4f2bfce2-Main Menu.scn
+res://menu.tscn::02710e1bf57ca4e998c168a5649887d5::1714338877::res://.godot/exported/133200997/export-a4951207776b25ee5c8b2b05c1463587-menu.scn
+res://Player Characters/Fencer.tscn::63986abe6a40868db45e3718596eafbc::1714566553::res://.godot/exported/133200997/export-39a8bb99273275ca54e140ce404b08f4-Fencer.scn
+res://Player Characters/Priest.tscn::2fe493891887d22aafe03f92f15011ca::1714566553::res://.godot/exported/133200997/export-54f3593ef9b5745066e0a663f9662521-Priest.scn
+res://Player Characters/Wizard.tscn::aa02ce490e1ff06ed4499c78e7650b8b::1714566553::res://.godot/exported/133200997/export-32af89d93672100a75a94a2d3fa7b03a-Wizard.scn
+res://Resources/Player Actions/Exploit Weakness/exploit_weakness.tres::caad511a38937bcd5cef977b829a2a71::1714479716::res://.godot/exported/133200997/export-37aea47f14e42f3571dee0823421b762-exploit_weakness.res
+res://Resources/Player Actions/Final Cut/final_cut.tres::52ccb30ee3091d4d099fa4cee1ffa423::1714478867::res://.godot/exported/133200997/export-9b68265e47bd6451095a908d527a3baf-final_cut.res
+res://Resources/Player Actions/Fireball/fireball.tres::f41b5e97beb9e6997603db6ceed4bd30::1714562394::res://.godot/exported/133200997/export-04808886a1381a372fad6ec0b56557f1-fireball.res
+res://Resources/Player Actions/Fleche/fleche.tres::dbb894fb4e4ad3663abdbcf06ca42d57::1714478985::res://.godot/exported/133200997/export-9efb141c639651e526265e09374c622c-fleche.res
+res://Resources/Player Actions/Heal/heal.tres::e4a28432d3eb4901116a6aff6d390f00::1714600582::res://.godot/exported/133200997/export-322caa846de1570a154ccc20f65fd1aa-heal.res
+res://Resources/Player Actions/Purge Undead/purge_undead.tres::909cd92d4653983b0658319f5f02aa1c::1714479747::res://.godot/exported/133200997/export-288e4489c076b0abe7b8b92483b11506-purge_undead.res
+res://Resources/Player Actions/Reinforce/reinforce.tres::5b6b3fe1eb79455a73eb2b989ffe3d84::1714478867::res://.godot/exported/133200997/export-335cf414c9380123ca0e08a805109ba0-reinforce.res
+res://Resources/Player Actions/Riposte/riposte.tres::2965525894e8c9e103d39a11e016583e::1714479716::res://.godot/exported/133200997/export-a70c578a2b0b47a94c4a1f3654ef7eb2-riposte.res
+res://Marker.tscn::c161005e1e780b2776cc54e5443c2703::1714602745::res://.godot/exported/133200997/export-6a42b2564039f56b7da876de7162a64d-Marker.scn
+res://GUI/damage_number.tscn::708b841eef1d887b22dbb4a74bc1bbbc::1714602745::res://.godot/exported/133200997/export-e768401c4a7aa91c9ede22f0012f0da0-damage_number.scn
+res://GUI/info_label.tscn::309cb868807876bded157b3800edb2d2::1714600309::res://.godot/exported/133200997/export-6febdf91a446787813ffe6f059da8aef-info_label.scn
+res://GUI/tutorial.tscn::b131a9794b14f96147dd8d9c6bf8c474::1714602810::res://.godot/exported/133200997/export-421fecfeda46642deaf53e36412cd079-tutorial.scn

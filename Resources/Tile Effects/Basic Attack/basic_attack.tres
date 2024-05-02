@@ -1,0 +1,6 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://di4l6ux71j2og"]
+
+[ext_resource type="Script" path="res://Resources/Tile Effects/Basic Attack/basic_attack.gd" id="1_flytj"]
+
+[resource]
+script = ExtResource("1_flytj")

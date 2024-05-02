@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://yxbe3mqyk0ra"]
+
+[ext_resource type="Script" path="res://Resources/Player Actions/Fleche/fleche.gd" id="1_8f3nr"]
+
+[resource]
+script = ExtResource("1_8f3nr")
+name = "Fleche"
+description = "Lunge forward, dealing massive damage. If there is no space to move, this attack does less damage"
+targetType = 1
+animType = "Attack"

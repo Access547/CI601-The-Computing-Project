@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4aaktadpqxq6"]
+
+[ext_resource type="Script" path="res://GUI/Damage Floater/Damage Floater.gd" id="1_3ronh"]
+
+[node name="Floater" type="RichTextLabel"]
+offset_right = 6.0
+offset_bottom = 12.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 8
+text = "5"
+script = ExtResource("1_3ronh")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

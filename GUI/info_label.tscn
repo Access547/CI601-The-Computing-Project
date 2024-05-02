@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgt8wqgg48we8"]
+
+[ext_resource type="Script" path="res://infoLabel.gd" id="1_dx0if"]
+
+[node name="infoLabel" type="RichTextLabel"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_dx0if")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
